@@ -21,12 +21,14 @@ FaceOSC
 * All FaceOSC downloads: https://github.com/kylemcdonald/ofxFaceTracker/downloads
 * FaceOSC + Syphon: https://github.com/downloads/kylemcdonald/ofxFaceTracker/FaceOSC-osx+Syphon.zip
 * Blink detection: https://github.com/downloads/kylemcdonald/ofxFaceTracker/BlinkExample-osx.zip
-* oscp5: http://www.sojamo.de/libraries/oscP5/
+* oscp5: http://www.sojamo.de/libraries/oscP5/ (install through Processing library manager)
 
 Face Recognition with Rekognition
 ---------------------------------
 * Rekognition: http://rekognition.com/
 * Sign up for API key: http://rekognition.com/register/
+* Get Processing library: https://www.dropbox.com/s/xr09pdaoul7wqpd/RekognitionProcessing.zip
+* Also need HTTPPRocessing: https://www.dropbox.com/s/fqzddqqfhzt7580/HTTProcessing.zip
 
 FaceShift
 ---------
