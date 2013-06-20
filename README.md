@@ -30,6 +30,12 @@ Face Recognition with Rekognition
 * Get Processing library: https://www.dropbox.com/s/xr09pdaoul7wqpd/RekognitionProcessing.zip
 * Also need HTTPPRocessing: https://www.dropbox.com/s/fqzddqqfhzt7580/HTTProcessing.zip
 
+Eigenfaces from @atduskgreg (http://makematics.com/syllabus/2012-fall/)
+---------------------------
+* https://github.com/atduskgreg/Processing-Eigenfaces
+* https://code.google.com/p/p-eigenface/
+* http://jeremykun.wordpress.com/2011/07/27/eigenfaces/
+
 FaceShift
 ---------
 * http://www.faceshift.com/
