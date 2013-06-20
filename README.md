@@ -16,3 +16,8 @@ FaceOSC
 * All FaceOSC downloads: https://github.com/kylemcdonald/ofxFaceTracker/downloads
 * FaceOSC + Syphon: https://github.com/downloads/kylemcdonald/ofxFaceTracker/FaceOSC-osx+Syphon.zip
 * Blink detection: https://github.com/downloads/kylemcdonald/ofxFaceTracker/BlinkExample-osx.zip
+
+Face Recognition with Rekognition
+---------------------------------
+* Rekognition: http://rekognition.com/
+* Sign up for API key: http://rekognition.com/register/
