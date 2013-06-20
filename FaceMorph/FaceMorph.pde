@@ -36,6 +36,8 @@ void draw() {
   s += " For example, click on right eye in left image then right eye in right image.  Set as many corresponding points as possible.";
   s += "\n\n 's' to save points, 'l' to load points";
   text(s,a.width+10,a.height+20,a.width-20,a.height-10);
+  
+  
 }
 
 void keyPressed() {
