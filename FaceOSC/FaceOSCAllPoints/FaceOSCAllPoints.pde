@@ -3,9 +3,11 @@
 This example uses the extended version of FaceOSC to draw
 all of the face points tracked by FaceOSC and to display the
 original camera image via Syphon
+
+****SYPHON has been temporarily removed from this example until Syphon support is added back in for 2.0****
+****See: https://github.com/processing/processing/issues/1860 *****
  
 Download the extended version here:
- 
 https://github.com/downloads/kylemcdonald/ofxFaceTracker/FaceOSC-osx+Syphon.zip
  
 NOTE WELL: this example will not work with the standard FaceOSC app,
@@ -93,7 +95,6 @@ void draw() {
   
   if (found) {
     fill(100);
-    
     drawFeature(faceOutline);
     drawFeature(leftEyebrow);
     drawFeature(rightEyebrow);

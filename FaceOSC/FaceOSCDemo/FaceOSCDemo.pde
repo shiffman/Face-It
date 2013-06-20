@@ -1,10 +1,11 @@
 // FaceOSC Example
 // Adapted from Greg Borenstein: https://gist.github.com/atduskgreg/1603230
 
+// Use with: https://github.com/downloads/kylemcdonald/ofxFaceTracker/FaceOSC.zip
+
 import oscP5.*;
 OscP5 oscP5;
 
- 
 PVector posePosition;
 boolean found;
 float eyeLeftHeight;
@@ -20,7 +21,6 @@ float poseScale;
 void setup() {
   size(640, 480);
   frameRate(30);
-  
   oscP5 = new OscP5(this, 8338);
   oscP5.plug(this, "mouthWidthReceived", "/gesture/mouth/width");
   oscP5.plug(this, "mouthHeightReceived", "/gesture/mouth/height");
@@ -35,18 +35,11 @@ void setup() {
   oscP5.plug(this, "posePosition", "/pose/position");
   oscP5.plug(this, "poseScale", "/pose/scale");
 }
-
-
  
 void draw() {
-  
-  
-  
-  
   background(255);
   stroke(0);
   if (found) {
- 
     translate(posePosition.x, posePosition.y);
     scale(poseScale);
     rotate(
