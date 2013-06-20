@@ -34,3 +34,8 @@ FaceShift
 ---------
 * http://www.faceshift.com/
 * https://github.com/kylemcdonald/ofxFaceShift/downloads
+
+FaceMorphing
+------------
+* How it works: https://ccrma.stanford.edu/~jacobliu/368Report/
+* Michael Jackson Black or White video: http://www.youtube.com/watch?feature=player_detailpage&v=bBAiZcNWecw#t=330s
