@@ -22,6 +22,7 @@ FaceOSC
 * FaceOSC + Syphon: https://github.com/downloads/kylemcdonald/ofxFaceTracker/FaceOSC-osx+Syphon.zip
 * Blink detection: https://github.com/downloads/kylemcdonald/ofxFaceTracker/BlinkExample-osx.zip
 * oscp5: http://www.sojamo.de/libraries/oscP5/ (install through Processing library manager)
+* Osculator: http://www.osculator.net/
 
 Face Recognition with Rekognition
 ---------------------------------
