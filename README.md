@@ -3,6 +3,7 @@ Faces
 
 A repository of Processing examples for ITP fall workshop about face detection, recognition, and miscellaneous tracking methods.
 
+Also, here's a nice blog post with a bunch of wacky face projects: http://thecreatorsproject.vice.com/blog/dance-like-michael-jackson
 
 OpenCV Face Detection
 ---------------------
