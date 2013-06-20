@@ -29,6 +29,7 @@ Face Recognition with Rekognition
 * Rekognition: http://rekognition.com/
 * Sign up for API key: http://rekognition.com/register/
 * Get Processing library: https://www.dropbox.com/s/xr09pdaoul7wqpd/RekognitionProcessing.zip
+* Source: https://github.com/shiffman/RekognitionProcessing
 * Also need HTTPProcessing: https://www.dropbox.com/s/fqzddqqfhzt7580/HTTProcessing.zip
 
 Eigenfaces from @atduskgreg
