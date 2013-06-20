@@ -13,17 +13,11 @@ void setup() {
   opencv = new OpenCVPro(this, 320, 240);
   cam = new Capture(this, 320, 240);
   cam.start();
-
   opencv.loadCascade(OpenCVPro.CASCADE_FRONTALFACE_ALT);  
-
-  noFill();
-  stroke(0, 255, 0);
-  strokeWeight(3);
 }
 
 void captureEvent(Capture cam) {
   cam.read();
-
 }
 
 void draw() {
