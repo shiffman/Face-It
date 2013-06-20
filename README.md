@@ -21,14 +21,29 @@ FaceOSC
 * All FaceOSC downloads: https://github.com/kylemcdonald/ofxFaceTracker/downloads
 * FaceOSC + Syphon: https://github.com/downloads/kylemcdonald/ofxFaceTracker/FaceOSC-osx+Syphon.zip
 * Blink detection: https://github.com/downloads/kylemcdonald/ofxFaceTracker/BlinkExample-osx.zip
-* oscp5: http://www.sojamo.de/libraries/oscP5/
+* oscp5: http://www.sojamo.de/libraries/oscP5/ (install through Processing library manager)
+* Osculator: http://www.osculator.net/
 
 Face Recognition with Rekognition
 ---------------------------------
 * Rekognition: http://rekognition.com/
 * Sign up for API key: http://rekognition.com/register/
+* Get Processing library: https://www.dropbox.com/s/xr09pdaoul7wqpd/RekognitionProcessing.zip
+* Also need HTTPProcessing: https://www.dropbox.com/s/fqzddqqfhzt7580/HTTProcessing.zip
+
+Eigenfaces from @atduskgreg
+---------------------------
+* Processing example: https://github.com/atduskgreg/Processing-Eigenfaces
+* Uses library: https://code.google.com/p/p-eigenface/
+* Explanation: http://jeremykun.wordpress.com/2011/07/27/eigenfaces/
+* All from syllabus: http://makematics.com/syllabus/2012-fall/
 
 FaceShift
 ---------
 * http://www.faceshift.com/
 * https://github.com/kylemcdonald/ofxFaceShift/downloads
+
+FaceMorphing
+------------
+* How it works: https://ccrma.stanford.edu/~jacobliu/368Report/
+* Michael Jackson Black or White video: http://www.youtube.com/watch?feature=player_detailpage&v=bBAiZcNWecw#t=330s
