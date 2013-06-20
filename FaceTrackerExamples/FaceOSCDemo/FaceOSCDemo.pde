@@ -3,6 +3,7 @@
 
 import oscP5.*;
 OscP5 oscP5;
+
  
 PVector posePosition;
 boolean found;
@@ -19,7 +20,7 @@ float poseScale;
 void setup() {
   size(640, 480);
   frameRate(30);
- 
+  
   oscP5 = new OscP5(this, 8338);
   oscP5.plug(this, "mouthWidthReceived", "/gesture/mouth/width");
   oscP5.plug(this, "mouthHeightReceived", "/gesture/mouth/height");
@@ -34,14 +35,21 @@ void setup() {
   oscP5.plug(this, "posePosition", "/pose/position");
   oscP5.plug(this, "poseScale", "/pose/scale");
 }
+
+
  
-void draw() {  
+void draw() {
+  
+  
+  
+  
   background(255);
   stroke(0);
   if (found) {
  
     translate(posePosition.x, posePosition.y);
     scale(poseScale);
+    rotate(
     noFill();
     // ellipse(0,0, 3,3);
     ellipse(-20, eyeLeftHeight * -9, 20, 7);

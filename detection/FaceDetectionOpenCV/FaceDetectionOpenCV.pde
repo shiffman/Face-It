@@ -23,13 +23,13 @@ void setup() {
 
 void captureEvent(Capture cam) {
   cam.read();
-  opencv.loadImage(cam);
-  faces = opencv.detect();
+
 }
 
 void draw() {
   background(0);
-
+  opencv.loadImage(cam);
+  faces = opencv.detect();
   image(cam, 0, 0);
 
   if (faces != null) {
