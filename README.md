@@ -10,6 +10,9 @@ Reference Projects
 * All the Universe is Full of the Lives of Perfect Creatures: https://vimeo.com/35262930
 * Face Substitution: https://vimeo.com/29279198 (https://github.com/arturoc/FaceSubstitution)
 * CVDazzle: http://cvdazzle.com/
+* [Drawing faces as instructed by facial detection](http://plummerfernandez.tumblr.com/post/54596732227/drawing-faces-as-instructed-by-facial-recognition)
+* [Portrait – Discovering centric figure(s) of movies using facial recognition](http://www.creativeapplications.net/processing/portrait-discovering-centric-figures-of-movies-using-facial-recognition/)
+* [Kamio IOS app](https://itunes.apple.com/us/app/kamio/id668849062?mt=8)
 
 OpenCV Face Detection
 ---------------------
