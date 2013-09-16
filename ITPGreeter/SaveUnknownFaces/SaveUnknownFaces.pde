@@ -44,9 +44,6 @@ void draw() {
   
   detector.showFaces();
   detector.saveNewFaces();
-  
-
-  
 }
 
 

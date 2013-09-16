@@ -106,7 +106,7 @@ class FaceDetector {
   void saveNewFaces() {
     for (Face f : newFaces) {
       PImage cropped = f.cropFace(cam);
-      cropped.save("face-"+f.id+".jpg");
+      cropped.save("faces/face-"+f.id+".jpg");
     }
   }
 
