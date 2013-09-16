@@ -9,6 +9,9 @@ import processing.video.*;
 import gab.opencvpro.*;
 import java.awt.Rectangle;
 
+import httprocessing.*;
+
+
 OpenCVPro opencv;
 
 Capture cam;
