@@ -39,8 +39,8 @@ void setup() {
   String k = keys[0];
   String secret = keys[1];
   rekog = new Rekognition(this, k, secret);
-  rekog.setNamespace("test99");
-  rekog.setUserID("1");
+  rekog.setNamespace("faceit2");
+  rekog.setUserID("shiffman");
   
   detector = new FaceDetector();
 }

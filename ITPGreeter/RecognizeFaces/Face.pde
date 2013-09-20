@@ -76,7 +76,7 @@ class Face {
     }
     stroke(0, 0, 255);
     rect(r.x*scl, r.y*scl, r.width*scl, r.height*scl);
-    fill(255, timer*2);
+    fill(255);
     text("id: "+id, r.x*scl+10, r.y*scl+30);
     text("Guess: "+guess, r.x*scl+10, r.y*scl+45);
     
@@ -89,7 +89,6 @@ class Face {
     }
     
     if (matches != null) {
-      fill(255);
       String display = "";
       for (String key : matches.keys()) {
         float likely = matches.get(key);
@@ -104,7 +103,6 @@ class Face {
       }
     }
     
-    image(img,r.x*scl*r.width*scl,r.y*scl);
   }
 
   // Give me a new location / size
@@ -149,5 +147,8 @@ class Face {
     // We need a second API call to train Rekognition of whatever faces have been added
     // Here it's one face, then train, but you could add a lot of faces before training
     rekog.train();
+    
+    // Check again
+    recognize();
   }
 }
