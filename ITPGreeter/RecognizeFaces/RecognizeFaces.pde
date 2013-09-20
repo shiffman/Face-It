@@ -24,6 +24,8 @@ Rekognition rekog;
 
 FaceDetector detector;
 
+String typed = "";
+
 void setup() {
   size( 640, 480 );
   opencv = new OpenCVPro(this, width/scl, height/scl);
@@ -57,8 +59,25 @@ void draw() {
   detector.detect(faces);
 
   detector.showFaces();
-  detector.saveNewFaces();
-  detector.recognizeNewFaces();
+  //detector.saveNewFaces();
+  //detector.recognizeNewFaces();
 }
 
+void mousePressed() {
+  detector.click(mouseX, mouseY);
+}
+
+void keyPressed() {
+
+  if (detector.selected) {
+    if (key == '\n') {
+      detector.enter(typed,true);
+      typed = "";
+    } 
+    else {
+      typed = typed + key;
+      detector.enter(typed,false);
+    }
+  }
+}
 

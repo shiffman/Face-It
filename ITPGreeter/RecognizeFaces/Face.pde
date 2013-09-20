@@ -24,6 +24,10 @@ class Face {
 
   FloatDict matches;
 
+  boolean selected = false;
+
+  String name = "";
+
   // Make me
   Face(int x, int y, int w, int h, int faceCount) {
     r = new Rectangle(x, y, w, h);
@@ -31,15 +35,21 @@ class Face {
     available = true;
     delete = false;
     id = faceCount;
+
+    // auto-recognize
+    recognize();
   }
 
-  void save(PImage i) {
+
+  void saveFace(PImage i) {
     img = i;
     path = "faces/face-"+id+".jpg";
     img.save(path);
   }
 
   void recognize() {
+    PImage cropped = cropFace(cam);
+    saveFace(cropped);
     RFace[] faces = rekog.recognizeFace(path);
     if (faces != null && faces.length > 0) {
       matches = faces[0].getMatches();
@@ -49,10 +59,30 @@ class Face {
   // Show me
   void display() {
     fill(0, 0, 255, timer);
+    if (selected) {
+      fill(255, 0, 0, timer);
+    }
     stroke(0, 0, 255);
     rect(r.x*scl, r.y*scl, r.width*scl, r.height*scl);
     fill(255, timer*2);
-    text(""+id, r.x*scl+10, r.y*scl+30);
+    text("id: "+id, r.x*scl+10, r.y*scl+30);
+    text("name: "+name, r.x*scl+10, r.y*scl+45);
+
+    if (matches != null) {
+      fill(255);
+      String display = "";
+      for (String key : matches.keys()) {
+        float likely = matches.get(key);
+        display += key + ": " + likely + "\n";
+        // We could also get Age, Gender, Smiling, Glasses, and Eyes Closed data like in the FaceDetect example
+        text(display, r.x*scl+10, r.y*scl+75);
+      }
+    } 
+    else {
+      if (frameCount % 60 == 0) {
+        recognize();
+      }
+    }
   }
 
   // Give me a new location / size
@@ -77,6 +107,26 @@ class Face {
     img.copy(source, r.x*scl, r.y*scl, r.width*scl, r.height*scl, 0, 0, r.width*scl, r.height*scl);
     img.updatePixels();
     return img;
+  }
+
+  boolean inside(float x, float y) {
+    return r.contains(x/scl, y/scl);
+  }
+
+  void selected(boolean b) {
+    selected = b;
+  }  
+
+  void setName(String s) {
+    name = s;
+  }
+
+  void train() {
+    rekog.addFace(path, name);
+
+    // We need a second API call to train Rekognition of whatever faces have been added
+    // Here it's one face, then train, but you could add a lot of faces before training
+    rekog.train();
   }
 }
 

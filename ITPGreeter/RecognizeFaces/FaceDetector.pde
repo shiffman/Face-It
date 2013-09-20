@@ -6,6 +6,8 @@ class FaceDetector {
   // how many have I found over all time
   int faceCount = 0;
 
+  boolean selected = false;
+
   FaceDetector() {
     faceList = new ArrayList<Face>();
     newFaces = new ArrayList<Face>();
@@ -97,6 +99,28 @@ class FaceDetector {
     }
   }
 
+  void click(float x, float y) {
+    for (Face f : faceList) {
+      if (f.inside(x, y)) {
+        f.selected(true);
+        selected = true;
+      }
+    }
+  }
+
+  void enter(String s, boolean finished) {
+    for (Face f : faceList) {
+      if (f.selected) {
+        f.setName(s);
+        if (finished) {
+          selected = false;
+          f.selected(false);
+          f.train();
+        }
+      }
+    }
+  }
+
   void newFace(Face f) {
     faceList.add(f);
     newFaces.add(f);
@@ -106,7 +130,7 @@ class FaceDetector {
   void saveNewFaces() {
     for (Face f : newFaces) {
       PImage cropped = f.cropFace(cam);
-      f.save(cropped);
+      f.saveFace(cropped);
     }
   }
 
@@ -115,7 +139,6 @@ class FaceDetector {
       f.recognize();
     }
   }
-
 
   void showFaces() {
     for (Face f : faceList) {
