@@ -20,18 +20,21 @@ void setup() {
   String api_key = keys[0];
   String api_secret = keys[1];
 
-  RekognitionFace facerekog = new RekognitionFace(this, api_key, api_secret);
+  Rekognition rekog = new Rekognition(this, api_key, api_secret);
+  rekog.setNamespace("test99");
+  rekog.setUserID("1");
 
   // Here we tell Rekognition that the face in this image associated with this name
-  facerekog.addFace(sketchPath("data/pitt.jpg"), "Pitt");
-
+  rekog.addFace("data/pitt.jpg", "Brad Pitt");
+  rekog.addFace("data/obama.jpg","Barack Obama");
+  
   // We need a second API call to train Rekognition of whatever faces have been added
   // Here it's one face, then train, but you could add a lot of faces before training
-  facerekog.train();
+  rekog.train();
 }
 
 void draw() {
-  
+
   // Not doing anything in this example
 }
 

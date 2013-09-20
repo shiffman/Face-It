@@ -11,14 +11,14 @@ import httprocessing.*;
 import rekognition.faces.*;
 
 PImage img;
-RekognitionFace facerekog;
-Face[] faces;
+Rekognition rekog;
+RFace[] faces;
 
 void setup() {
   size(800, 400);
 
   // load image for drawing
-  String filename = "obama.jpg";
+  String filename = "data/obama.jpg";
   img = loadImage(filename);
 
   // Load the API keys
@@ -27,10 +27,12 @@ void setup() {
   String api_secret = keys[1];
 
   // Create the face recognizer object
-  facerekog = new RekognitionFace(this, api_key, api_secret);
-
+  rekog = new Rekognition(this, api_key, api_secret);
+  rekog.setNamespace("faceit1");
+  rekog.setUserID("shiffman");
+  
   // Recognize faces in image
-  faces = facerekog.recognizeFace(sketchPath("data/"+filename));
+  faces = rekog.recognizeFace(filename);
 }
 
 void draw() {

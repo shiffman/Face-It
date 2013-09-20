@@ -13,6 +13,8 @@ class FaceDetector {
     newFaces = new ArrayList<Face>();
   }
 
+
+
   void detect(Rectangle[] faces) {
 
     // Assume no new faces
@@ -107,6 +109,17 @@ class FaceDetector {
       }
     }
   }
+
+  void rollover(float x, float y) {
+    for (Face f : faceList) {
+      if (f.inside(x, y)) {
+        f.rollover(true);
+      } else {
+        f.rollover(false);
+      }
+    }
+  }
+
 
   void enter(String s, boolean finished) {
     for (Face f : faceList) {

@@ -39,7 +39,9 @@ void setup() {
   String k = keys[0];
   String secret = keys[1];
   rekog = new Rekognition(this, k, secret);
-
+  rekog.setNamespace("test99");
+  rekog.setUserID("1");
+  
   detector = new FaceDetector();
 }
 
@@ -59,6 +61,7 @@ void draw() {
   detector.detect(faces);
 
   detector.showFaces();
+  detector.rollover(mouseX,mouseY);
   //detector.saveNewFaces();
   //detector.recognizeNewFaces();
 }

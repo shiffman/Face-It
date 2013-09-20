@@ -25,8 +25,10 @@ class Face {
   FloatDict matches;
 
   boolean selected = false;
+  boolean rollover = false;
 
   String name = "";
+  String guess = "";
 
   // Make me
   Face(int x, int y, int w, int h, int faceCount) {
@@ -53,27 +55,45 @@ class Face {
     RFace[] faces = rekog.recognizeFace(path);
     if (faces != null && faces.length > 0) {
       matches = faces[0].getMatches();
+      matches.sortValuesReverse();
+      if (matches.size() > 0) {
+        guess = matches.keyArray()[0];
+      }
     }
+  }
+  
+  void rollover(boolean b) {
+    rollover = b; 
   }
 
   // Show me
   void display() {
     fill(0, 0, 255, timer);
-    if (selected) {
+    if (rollover) {
+      fill(255,0,255,timer);
+    } else if (selected) {
       fill(255, 0, 0, timer);
     }
     stroke(0, 0, 255);
     rect(r.x*scl, r.y*scl, r.width*scl, r.height*scl);
     fill(255, timer*2);
     text("id: "+id, r.x*scl+10, r.y*scl+30);
-    text("name: "+name, r.x*scl+10, r.y*scl+45);
-
+    text("Guess: "+guess, r.x*scl+10, r.y*scl+45);
+    
+    
+    
+    if (selected) {
+      text("Enter actual name: " + name, r.x*scl+10, r.y*scl+r.height*scl-15);
+    } else if (rollover) {
+      text("Click to enter name.", r.x*scl+10, r.y*scl+r.height*scl-15);
+    }
+    
     if (matches != null) {
       fill(255);
       String display = "";
       for (String key : matches.keys()) {
         float likely = matches.get(key);
-        display += key + ": " + likely + "\n";
+        display += key + ": " + int(likely*100) + "%\n";
         // We could also get Age, Gender, Smiling, Glasses, and Eyes Closed data like in the FaceDetect example
         text(display, r.x*scl+10, r.y*scl+75);
       }
@@ -83,6 +103,8 @@ class Face {
         recognize();
       }
     }
+    
+    image(img,r.x*scl*r.width*scl,r.y*scl);
   }
 
   // Give me a new location / size
@@ -129,4 +151,3 @@ class Face {
     rekog.train();
   }
 }
-
