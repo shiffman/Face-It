@@ -30,7 +30,9 @@ class Face {
   String name = "";
   String guess = "";
 
-  FaceRequest req;
+  RecognizeRequest rreq;
+  TrainRequest treq;
+
 
   // Make me
   Face(int x, int y, int w, int h, int faceCount) {
@@ -52,24 +54,31 @@ class Face {
   }
 
   void checkRequests() {
-    if (req != null && req.done) {
-      matches = req.getMatches();
-      req = null;
+    if (rreq != null && rreq.done) {
+      matches = rreq.getMatches();
+      rreq = null;
       if (matches.size() > 0) {
         guess = matches.keyArray()[0];
-      } else {
+      } 
+      else {
         // If no matches, set to null to restart checking
         matches = null;
       }
     }
+    
+    if (treq != null && treq.done) {
+      treq = null;
+      recognize(); 
+    }
+    
+    
   }
 
   void recognize() {
-    println("Starting recognition");
     PImage cropped = cropFace(cam);
     saveFace(cropped);
-    req = new FaceRequest(path);
-    req.start();
+    rreq = new RecognizeRequest(path);
+    rreq.start();
   }
 
   void rollover(boolean b) {
@@ -109,7 +118,7 @@ class Face {
         text(display, r.x*scl+10, r.y*scl+75);
       }
     } 
-    else if (req == null) {
+    else if (rreq == null) {
       recognize();
     }
   }
@@ -152,14 +161,8 @@ class Face {
   }
 
   void train() {
-    rekog.addFace(path, name);
-
-    // We need a second API call to train Rekognition of whatever faces have been added
-    // Here it's one face, then train, but you could add a lot of faces before training
-    rekog.train();
-
-    // Check again
-    recognize();
+    trainRequest = new TrainRequest(path,name);
+    trainRequest.start();
   }
 }
 

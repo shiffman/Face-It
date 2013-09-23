@@ -1,14 +1,13 @@
 
-class FaceRequest extends Thread {
+class RecognizeRequest extends Thread {
 
   String path;
   
   boolean done;
   
   FloatDict matches;
-  
 
-  FaceRequest (String s) {
+  RecognizeRequest (String s) {
     path = s;
     matches = new FloatDict();
     done = false;
@@ -20,7 +19,6 @@ class FaceRequest extends Thread {
       matches = faces[0].getMatches();
       matches.sortValuesReverse();
     }
-    println("DONE " + matches);
     done = true;
   }
   
