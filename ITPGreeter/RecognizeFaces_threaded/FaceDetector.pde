@@ -1,11 +1,18 @@
+// Face Recognizer App
+// OpenCV + Rekognition API
+
+// This class keeps track of the list of faces on screen
+// It also knows which faces are new this frame for recognition
+
 class FaceDetector {
   // A list of my Face objects
   ArrayList<Face> faceList;
   ArrayList<Face> newFaces;
 
-  // how many have I found over all time
+  // How many have I found over all time
   int faceCount = 0;
 
+  // Is a face selected?
   boolean selected = false;
 
   FaceDetector() {
@@ -13,7 +20,7 @@ class FaceDetector {
     newFaces = new ArrayList<Face>();
   }
 
-
+  // Update the list of faces based on current Rectangles from OpenCV
   void detect(Rectangle[] faces) {
 
     // Assume no new faces
@@ -100,6 +107,7 @@ class FaceDetector {
     }
   }
 
+  // See if we've clicked on a Face
   void click(float x, float y) {
     for (Face f : faceList) {
       if (f.inside(x, y)) {
@@ -109,6 +117,7 @@ class FaceDetector {
     }
   }
 
+  // See if we are rolling over a Face
   void rollover(float x, float y) {
     for (Face f : faceList) {
       if (f.inside(x, y)) {
@@ -121,6 +130,7 @@ class FaceDetector {
   }
 
 
+  // Set the name of the face that is selected
   void enter(String s, boolean finished) {
     for (Face f : faceList) {
       if (f.selected) {
@@ -134,35 +144,27 @@ class FaceDetector {
     }
   }
 
+  // Add a new face to the world
   void newFace(Face f) {
     faceList.add(f);
     newFaces.add(f);
     faceCount++;
   }
 
-  void saveNewFaces() {
-    for (Face f : newFaces) {
-      PImage cropped = f.cropFace(cam);
-      f.saveFace(cropped);
-    }
-  }
 
-  void recognizeNewFaces() {
-    for (Face f : newFaces) {
-      f.recognize();
-    }
-  }
-
+  // Draw all the faces
   void showFaces() {
     for (Face f : faceList) {
       f.display();
     }
   }
-
+  
+  // Check any requests for any faces
   void checkRequests() {
     for (Face f : faceList) {
       f.checkRequests();
     }
   }
+
 }
 
