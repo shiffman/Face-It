@@ -5,7 +5,7 @@ A repository of Processing examples for ITP fall workshop about face detection, 
 
 Reference Projects
 ------------------
-* [Split Faces](http://www.mymodernmet.com/profiles/blogs/split-family-faces)
+* [Split Faces](http://www.mymodernmet.com/profiles/blogs/split-family-faces) by http://www.ulriccollette.com/
 * Dance with your face: http://www.youtube.com/watch?v=dplBh_rxoUc
 * Blind self-portrait: https://vimeo.com/40279845
 * All the Universe is Full of the Lives of Perfect Creatures: https://vimeo.com/35262930
