@@ -178,6 +178,9 @@ class Face {
     y = lerp(y,newR.y,0.1);
     w = lerp(w,newR.width,0.1);
     h = lerp(h,newR.height,0.1);
+    
+    // If it lives you should get a new timer
+    timer = 127;
   }
 
   // Count me down, I am gone
