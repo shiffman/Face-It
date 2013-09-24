@@ -27,7 +27,12 @@ Capture cam;
 
 // We will need a smaller image for fast real-time detection
 PImage smaller;
-int scl = 4;  // scale down factor
+
+
+int openCVScale = 4;  // Scale Capture to OpenCV
+float windowScale;    // Window to Capture
+float scl;            // Overall scale for drawing faces
+
 
 // Rekognition API 
 Rekognition rekog;
@@ -39,19 +44,25 @@ FaceDetector detector;
 // This is awkard and needs to be improved
 String typed = "";
 
+int vw = 640;
+int vh = 480;
+
 void setup() {
-  size(640, 480);
-  
+  size(1024, 768);
+
+  windowScale = width/float(vw);
+  scl = windowScale * openCVScale;
+
   // OpenCV object
-  opencv = new OpenCVPro(this, width/scl, height/scl);
+  opencv = new OpenCVPro(this, vw/openCVScale, vh/openCVScale);
   opencv.loadCascade(OpenCVPro.CASCADE_FRONTALFACE_ALT); 
-  
+
   // Scaled down image
   smaller = createImage(opencv.width, opencv.height, RGB);
   // Larger capture object
-  cam = new Capture(this, width, height);
+  cam = new Capture(this, vw, vh);
   cam.start();
-  
+
   // Setting up Rekognition API
   String[] keys = loadStrings("key.txt");
   String k = keys[0];
@@ -60,7 +71,7 @@ void setup() {
   // You can have different databases of faces for different applications
   rekog.setNamespace("faceit2");
   rekog.setUserID("shiffman");
-  
+
   // A generic time-based face detector
   detector = new FaceDetector();
 }
@@ -71,11 +82,11 @@ void captureEvent(Capture cam) {
 }
 
 void draw() {
-  
+
   background(0);
   // Draw video
-  image(cam, 0, 0);
-  
+  image(cam, 0, 0, width, height);
+
   // Scale down video and pass to OpenCV
   smaller.copy(cam, 0, 0, cam.width, cam.height, 0, 0, smaller.width, smaller.height);
   smaller.updatePixels();
@@ -84,13 +95,13 @@ void draw() {
   // Get an array of rectangles and send to the detector
   Rectangle[] faces = opencv.detect();
   detector.detect(faces);
-  
+
   // Draw the faces
   detector.showFaces();
   // Check for any requests to Rekognition API
   detector.checkRequests();
   // Check to see if user is rolling over faces
-  detector.rollover(mouseX,mouseY);
+  detector.rollover(mouseX, mouseY);
 }
 
 void mousePressed() {
@@ -99,17 +110,16 @@ void mousePressed() {
 }
 
 void keyPressed() {
-  
+
   // This should really be improved, super basic keyboard input for name
   if (detector.selected) {
     if (key == '\n') {
-      detector.enter(typed,true);
+      detector.enter(typed, true);
       typed = "";
     } 
     else {
       typed = typed + key;
-      detector.enter(typed,false);
+      detector.enter(typed, false);
     }
   }
 }
-

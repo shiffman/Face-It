@@ -9,8 +9,9 @@
 
 class Face {
 
-  // A Rectangle
-  Rectangle r;
+  // Let's not use the rectangle, ints in limiting
+  // Rectangle r;
+  float x,y,w,h;
 
   // Am I available?
   boolean available;
@@ -44,11 +45,15 @@ class Face {
   // Threaded requests to API
   RecognizeRequest rreq;
   TrainRequest treq;
+  
 
 
   // Constuctor
-  Face(int x, int y, int w, int h, int faceCount) {
-    r = new Rectangle(x, y, w, h);
+  Face(Rectangle r, int faceCount) {
+    x = r.x;
+    y = r.y;
+    w = r.width;
+    h = r.height;
 
     // We are initially available to OpenCV and should not be deleted
     available = true;
@@ -69,8 +74,8 @@ class Face {
 
   // Crop the image into a smaller PImage
   PImage cropFace(PImage source) {
-    PImage img = createImage(r.width*scl, r.height*scl, RGB);
-    img.copy(source, r.x*scl, r.y*scl, r.width*scl, r.height*scl, 0, 0, r.width*scl, r.height*scl);
+    PImage img = createImage(int(w*openCVScale), int(h*openCVScale), RGB);
+    img.copy(source, int(x*openCVScale), int(y*openCVScale), int(w*openCVScale), int(h*openCVScale), 0, 0, int(w*openCVScale), int(h*openCVScale));
     img.updatePixels();
     return img;
   }
@@ -134,20 +139,20 @@ class Face {
     }
     // Draw the face
     stroke(0, 0, 255);
-    rect(r.x*scl, r.y*scl, r.width*scl, r.height*scl);
+    rect(x*scl, y*scl, w*scl, h*scl);
     fill(255);
 
     // Draw the ID and guess
-    text("id: "+id, r.x*scl+10, r.y*scl+30);
-    text("Guess: "+guess, r.x*scl+10, r.y*scl+45);
+    text("id: "+id, x*scl+10, y*scl+30);
+    text("Guess: "+guess, x*scl+10, y*scl+45);
 
 
     // Display info based on selection status
     if (selected) {
-      text("Enter actual name: " + name, r.x*scl+10, r.y*scl+r.height*scl-15);
+      text("Enter actual name: " + name, x*scl+10, y*scl+h*scl-15);
     } 
     else if (rollover) {
-      text("Click to enter name.", r.x*scl+10, r.y*scl+r.height*scl-15);
+      text("Click to enter name.", x*scl+10, y*scl+h*scl-15);
     }
 
 
@@ -158,7 +163,7 @@ class Face {
         float likely = matches.get(key);
         display += key + ": " + int(likely*100) + "%\n";
         // We could also get Age, Gender, Smiling, Glasses, and Eyes Closed data like in the FaceDetect example
-        text(display, r.x*scl+10, r.y*scl+75);
+        text(display, x*scl+10, y*scl+75);
       }
     }
   }
@@ -168,7 +173,11 @@ class Face {
   // Give me a new location / size
   // Oooh, it would be nice to lerp here!
   void update(Rectangle newR) {
-    r = (Rectangle) newR.clone();
+    //r = (Rectangle) newR.clone();
+    x = lerp(x,newR.x,0.1);
+    y = lerp(y,newR.y,0.1);
+    w = lerp(w,newR.width,0.1);
+    h = lerp(h,newR.height,0.1);
   }
 
   // Count me down, I am gone
@@ -183,8 +192,10 @@ class Face {
   }
 
   // Check it mouse is inside
-  boolean inside(float x, float y) {
-    return r.contains(x/scl, y/scl);
+  boolean inside(float px, float py) {
+    px = px/scl;
+    py = py/scl;
+    return (px > x && px < x + w && py > y && py < y + h);
   }
 
   // Set rollover to true or false
@@ -203,4 +214,3 @@ class Face {
     name = s;
   }
 }
-

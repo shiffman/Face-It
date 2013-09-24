@@ -30,7 +30,7 @@ class FaceDetector {
     if (faceList.isEmpty()) {
       // Just make a Face object for every face Rectangle
       for (int i = 0; i < faces.length; i++) {
-        Face f = new Face(faces[i].x, faces[i].y, faces[i].width, faces[i].height, faceCount);
+        Face f = new Face(faces[i], faceCount);
         newFace(f);
       }
       // SCENARIO 2: We have fewer Face objects than face Rectangles found from OPENCV
@@ -44,7 +44,7 @@ class FaceDetector {
         float record = 50000;
         int index = -1;
         for (int i = 0; i < faces.length; i++) {
-          float d = dist(faces[i].x, faces[i].y, f.r.x, f.r.y);
+          float d = dist(faces[i].x, faces[i].y, f.x, f.y);
           if (d < record && !used[i]) {
             record = d;
             index = i;
@@ -57,7 +57,7 @@ class FaceDetector {
       // Add any unused faces
       for (int i = 0; i < faces.length; i++) {
         if (!used[i]) {
-          Face f = new Face(faces[i].x, faces[i].y, faces[i].width, faces[i].height, faceCount);
+          Face f = new Face(faces[i], faceCount);
           newFace(f);
         }
       }
@@ -76,7 +76,7 @@ class FaceDetector {
         int index = -1;
         for (int j = 0; j < faceList.size(); j++) {
           Face f = faceList.get(j);
-          float d = dist(faces[i].x, faces[i].y, f.r.x, f.r.y);
+          float d = dist(faces[i].x, faces[i].y, f.x, f.y);
           if (d < record && f.available) {
             record = d;
             index = j;
@@ -167,4 +167,3 @@ class FaceDetector {
   }
 
 }
-
