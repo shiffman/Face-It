@@ -30,6 +30,7 @@ FaceOSC
 * oscp5: http://www.sojamo.de/libraries/oscP5/ (install through Processing library manager)
 * Osculator: http://www.osculator.net/
 * Interview with Kyle McDonald about FaceTracker: http://makematics.com/research/facetracker/
+* [Deformable Model Fitting by Regularized Landmark Mean-Shift](http://link.springer.com/article/10.1007%2Fs11263-010-0380-4)
 
 Face Recognition with Rekognition
 ---------------------------------
