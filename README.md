@@ -3,7 +3,7 @@ Face It Syllabus
 
 A "syllabus" and repository of Processing examples for ITP fall workshop about face detection, recognition, and miscellaneous tracking methods.
 
-## 10:00 AM - Overview
+## 10:00 AM - Overview of day
 * Detection vs. Recognition vs. Tracking
 
 ## 10:15 AM - Reference Projects
@@ -46,12 +46,13 @@ A "syllabus" and repository of Processing examples for ITP fall workshop about f
     * [More algorithms and stuff](http://www.face-rec.org/)
 * But let's just use an API!
     * [Rekognition](http://rekognition.com/), [Sign up for API key](http://rekognition.com/register/)
-    * [Lambda Labls](http://www.lambdal.com/)
-    * [Rekognition for Processing Library](https://github.com/shiffman/RekognitionProcessing/releases/tag/0.1)
-        * requires [HTTProcessing](https://www.dropbox.com/s/fqzddqqfhzt7580/HTTProcessing.zip)
+        * [Rekognition for Processing Library](https://github.com/shiffman/RekognitionProcessing/releases/tag/0.1)
+        * also requires [HTTProcessing](https://www.dropbox.com/s/fqzddqqfhzt7580/HTTProcessing.zip)
         * [Detect a Face](https://github.com/shiffman/Faces/tree/master/FaceRekognition/FaceDetectExample)
         * [Train a Face](https://github.com/shiffman/Faces/tree/master/FaceRekognition/FaceTrainExample)
         * [Recognize a Face](https://github.com/shiffman/Faces/tree/master/FaceRekognition/FaceRecognizeExample)
+    * [Lambda Labs](http://www.lambdal.com/)
+        * [Processing library in progress](https://github.com/shiffman/LambdaProcessing) -- talk to me if you want to use this.
 
 
 FaceOSC
