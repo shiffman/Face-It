@@ -1,18 +1,12 @@
-Faces
-=====
+Face It Syllabus
+================
 
-A repository of Processing examples for ITP fall workshop about face detection, recognition, and miscellaneous tracking methods.
+A "syllabus" and repository of Processing examples for ITP fall workshop about face detection, recognition, and miscellaneous tracking methods.
 
-Syllabus
---------
+## 10:00 AM - Overview of Face Detection, Recognition, Tracking
 
-### 10:00 AM - Overview of Face Detection, Recognition, Tracking
+## 10:15 AM - Reference Projects
 
-### 10:15 AM - 
-
-
-Reference Projects
-------------------
 * Face Detection
     * [Drawing faces as instructed by facial detection](http://plummerfernandez.tumblr.com/post/54596732227/drawing-faces-as-instructed-by-facial-recognition)
     * [Portrait – Discovering centric figure(s) of movies using facial recognition](http://ssbkyh.com/works/portrait/)
@@ -30,11 +24,10 @@ Reference Projects
     * [Blind self-portrait](https://vimeo.com/40279845) and [Self-Portrait Machine](http://we-make-money-not-art.com/archives/2009/07/selfportrait-machine.php#.UkQ27WTXhTs)
     * The Human Face Documentary: [Part 1](http://www.youtube.com/watch?v=8HlqbSDqmE4), [Part 2](http://www.youtube.com/watch?v=dEocYZmuxbs), [Part 3](http://www.youtube.com/watch?v=HJpqoAkWgXI), [Part 4](http://www.youtube.com/watch?v=IDAsQQE0Il4)
 
-OpenCV Face Detection
----------------------
-* Processing OpenCV library: https://github.com/atduskgreg/OpenCVPro
-* Temporary library download: https://www.dropbox.com/s/b51ffu4u2o95mkq/OpenCVPro.zip (Note Face Detect example in Processing 2.0 will not work on Retina display macs)
-* Interview with Adam Harvey re: Face Detection: http://makematics.com/research/viola-jones/
+## 11:00 AM - OpenCV Face Detection
+* [Processing OpenCV library](https://github.com/atduskgreg/OpenCVPro)
+* [Interview with Adam Harvey re: Face Detection](http://makematics.com/research/viola-jones/)
+* 
 
 FaceOSC
 -------
