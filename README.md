@@ -40,8 +40,14 @@ A "syllabus" and repository of Processing examples for ITP fall workshop about f
 ## 12:00 PM - Lunch
 
 ## 1:00 PM - Face Recognition
-* Rekognition: http://rekognition.com/
-* Sign up for API key: http://rekognition.com/register/
+* How it works
+    * [Eigenfaces](http://jeremykun.wordpress.com/2011/07/27/eigenfaces/)
+        * [Processing example](https://github.com/atduskgreg/Processing-Eigenfaces) from Greg Borenstein using [Processing-Eigenfaces](https://github.com/atduskgreg/Processing-Eigenfaces)
+    * [More algorithms and stuff](http://www.face-rec.org/)
+* But let's just use an API!
+    * [Rekognition](http://rekognition.com/), [Sign up for API key](http://rekognition.com/register/)
+    * [Lambda Labls](http://www.lambdal.com/)
+    * [Rekognition for Processing Library]
 * Get Processing library: https://www.dropbox.com/s/xr09pdaoul7wqpd/RekognitionProcessing.zip
 * Source: https://github.com/shiffman/RekognitionProcessing
 * Also need HTTPProcessing: https://www.dropbox.com/s/fqzddqqfhzt7580/HTTProcessing.zip
