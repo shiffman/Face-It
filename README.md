@@ -28,7 +28,7 @@ A "syllabus" and repository of Processing examples for ITP fall workshop about f
 ## 11:00 AM - OpenCV Face Detection
 * [Processing OpenCV library](https://github.com/atduskgreg/OpenCVPro)
 * [Interview with Adam Harvey re: Face Detection](http://makematics.com/research/viola-jones/)
-* 
+* [Haarcascade Visualizer](https://github.com/adamhrv/HaarcascadeVisualizer) -- Note this requires Processing 1.5.1
 
 ## 12:00 PM - Lunch
 
