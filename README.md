@@ -7,7 +7,7 @@ Reference Projects
 ------------------
 * [Split Faces](http://www.mymodernmet.com/profiles/blogs/split-family-faces) by http://www.ulriccollette.com/
 * Dance with your face: http://www.youtube.com/watch?v=dplBh_rxoUc
-* Blind self-portrait: https://vimeo.com/40279845
+* [Blind self-portrait](https://vimeo.com/40279845) and [Self-Portrait Machine](http://we-make-money-not-art.com/archives/2009/07/selfportrait-machine.php#.UkQ27WTXhTs)
 * All the Universe is Full of the Lives of Perfect Creatures: https://vimeo.com/35262930
 * Face Substitution: https://vimeo.com/29279198 (https://github.com/arturoc/FaceSubstitution)
 * CVDazzle: http://cvdazzle.com/
