@@ -1,5 +1,7 @@
-// Which Face Is Which
+// Face It
+// ITP Fall 2013
 // Daniel Shiffman
+// https://github.com/shiffman/Faces
 
 import processing.video.*;
 

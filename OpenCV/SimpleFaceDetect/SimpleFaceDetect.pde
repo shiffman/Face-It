@@ -1,6 +1,7 @@
 // Face It
 // ITP Fall 2013
 // Daniel Shiffman
+// https://github.com/shiffman/Faces
 
 // Import the library
 import gab.opencv.*;
