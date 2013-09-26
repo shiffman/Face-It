@@ -56,25 +56,25 @@ A "syllabus" and repository of Processing examples for ITP fall workshop about f
         * [Processing library in progress](https://github.com/shiffman/LambdaProcessing) -- talk to me if you want to use this.
 
 ## 2:30 PM - Face Tracking
-    * [FaceTracker](https://github.com/kylemcdonald/FaceTracker) by [Jason Saragih](http://jsaragih.org/).
-         * [Interview with Kyle McDonald about FaceTracker](http://makematics.com/research/facetracker/)
-         * Original "[Deformable Model Fitting by Regularized Landmark Mean-Shift](http://link.springer.com/article/10.1007%2Fs11263-010-0380-4)" paper.
-         * [ofxFaceTracker](https://github.com/kylemcdonald/ofxFaceTracker) for direct use in OF.
-         * [FaceOSC Downloads](https://github.com/kylemcdonald/ofxFaceTracker/downloads) for use with Processing and other applications
-         * [FaceOSC + Syphon to get image into Processing](https://github.com/downloads/kylemcdonald/ofxFaceTracker/FaceOSC-osx+Syphon.zip)
-         * [Blink detection OSC](https://github.com/downloads/kylemcdonald/ofxFaceTracker/BlinkExample-osx.zip)
-         * OSC
-             * [oscp5](http://www.sojamo.de/libraries/oscP5/) (install through Processing library manager)
-             * [Osculator](http://www.osculator.net/) for help with debugging OSC
-    * [http://faceshift.com/](FaceShift)
-        * [download free trial](http://www.faceshift.com/get-trial/) - 30 days only, noncommercial license avaialble for $150 and there will be a faceshift laptop in ER for checkout with academic license.
-        * [https://github.com/kylemcdonald/ofxFaceShift](ofxFaceShift) for direct use in OF
-        * [FaceShiftOSC tutorial](https://vimeo.com/46916078) from Kyle (note the tutorial uses an older version of FaceShift but concepts still apply).
-        * [FaceShiftOSC download]
-    * Face Morphing
-        * [How it works](https://ccrma.stanford.edu/~jacobliu/368Report/)
-        * [Michael Jackson Black or White video](http://www.youtube.com/watch?feature=player_detailpage&v=bBAiZcNWecw#t=330s)
-        * [Processing Example](https://github.com/shiffman/Faces/tree/master/FaceMorph)
+* [FaceTracker](https://github.com/kylemcdonald/FaceTracker) by [Jason Saragih](http://jsaragih.org/).
+   * [Interview with Kyle McDonald about FaceTracker](http://makematics.com/research/facetracker/)
+   * Original "[Deformable Model Fitting by Regularized Landmark Mean-Shift](http://link.springer.com/article/10.1007%2Fs11263-010-0380-4)" paper.
+   * [ofxFaceTracker](https://github.com/kylemcdonald/ofxFaceTracker) for direct use in OF.
+      * [FaceOSC Downloads](https://github.com/kylemcdonald/ofxFaceTracker/downloads) for use with Processing and other applications
+      * [FaceOSC + Syphon to get image into Processing](https://github.com/downloads/kylemcdonald/ofxFaceTracker/FaceOSC-osx+Syphon.zip)
+      * [Blink detection OSC](https://github.com/downloads/kylemcdonald/ofxFaceTracker/BlinkExample-osx.zip)
+      * OSC
+         * [oscp5](http://www.sojamo.de/libraries/oscP5/) (install through Processing library manager)
+         * [Osculator](http://www.osculator.net/) for help with debugging OSC
+* [FaceShift](http://faceshift.com/)
+   * [download free trial](http://www.faceshift.com/get-trial/) - 30 days only, noncommercial license avaialble for $150 and there will be a faceshift laptop in ER for checkout with academic license.
+   * [https://github.com/kylemcdonald/ofxFaceShift](ofxFaceShift) for direct use in OF
+   * [FaceShiftOSC tutorial](https://vimeo.com/46916078) from Kyle (note the tutorial uses an older version of FaceShift but concepts still apply).
+   * [FaceShiftOSC download]
+* Face Morphing
+   * [How it works](https://ccrma.stanford.edu/~jacobliu/368Report/)
+   * [Michael Jackson Black or White video](http://www.youtube.com/watch?feature=player_detailpage&v=bBAiZcNWecw#t=330s)
+   * [Processing Example](https://github.com/shiffman/Faces/tree/master/FaceMorph)
 
 ## 4:00 PM - Wrap-Up / Project Idea Discussion
 
