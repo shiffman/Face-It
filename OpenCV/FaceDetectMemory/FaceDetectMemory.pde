@@ -5,11 +5,10 @@
 
 import processing.video.*;
 
-import gab.opencvpro.*;
+import gab.opencv.*;
 import java.awt.Rectangle;
 
-
-OpenCVPro opencv;
+OpenCV opencv;
 
 Capture cam;
 PImage smaller;
@@ -19,16 +18,17 @@ ArrayList<Face> faceList;
 
 // how many have I found over all time
 int faceCount = 0;
+
 // Scaling down the video
 int scl = 4;
 
 void setup() {
-  size( 640, 480 );
-  opencv = new OpenCVPro(this, width/scl, height/scl);
+  size(640, 480, P2D);
+  opencv = new OpenCV(this, width/scl, height/scl);
   smaller = createImage(opencv.width,opencv.height,RGB);
   cam = new Capture(this, width, height);
   cam.start();
-  opencv.loadCascade(OpenCVPro.CASCADE_FRONTALFACE_ALT);  
+  opencv.loadCascade(OpenCV.CASCADE_FRONTALFACE);  
   faceList = new ArrayList<Face>();
 }
 
