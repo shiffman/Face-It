@@ -3,7 +3,7 @@ Face It Syllabus
 
 A "syllabus" and repository of Processing examples for ITP fall workshop about face detection, recognition, and miscellaneous tracking methods.
 
-## 10:00 AM - Overview of Face Detection, Recognition, Tracking
+## 10:00 AM - Overview
 
 ## 10:15 AM - Reference Projects
 
