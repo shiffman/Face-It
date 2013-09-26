@@ -7,7 +7,7 @@ Reference Projects
 ------------------
 * Face Detection
     * [Drawing faces as instructed by facial detection](http://plummerfernandez.tumblr.com/post/54596732227/drawing-faces-as-instructed-by-facial-recognition)
-    * [Portrait – Discovering centric figure(s) of movies using facial recognition](http://www.creativeapplications.net/processing/portrait-discovering-centric-figures-of-movies-using-facial-recognition/)
+    * [Portrait – Discovering centric figure(s) of movies using facial recognition](http://ssbkyh.com/works/portrait/)
     * [Cloud Faces](http://ssbkyh.com/works/cloud_face/)
     * [Google Earth Faces](http://www.onformative.com/lab/googlefaces/)
     * [CVDazzle](http://cvdazzle.com/)
