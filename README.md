@@ -67,26 +67,15 @@ A "syllabus" and repository of Processing examples for ITP fall workshop about f
          * OSC
              * [oscp5](http://www.sojamo.de/libraries/oscP5/) (install through Processing library manager)
              * [Osculator](http://www.osculator.net/) for help with debugging OSC
+    * [http://faceshift.com/](FaceShift)
+        * [download free trial](http://www.faceshift.com/get-trial/) - 30 days only, noncommercial license avaialble for $150 and there will be a faceshift laptop in ER for checkout with academic license.
+        * [https://github.com/kylemcdonald/ofxFaceShift](ofxFaceShift) for direct use in OF
+        * [FaceShiftOSC tutorial](https://vimeo.com/46916078) from Kyle (note the tutorial uses an older version of FaceShift but concepts still apply).
+        * [FaceShiftOSC download]
+    * Face Morphing
+        * [How it works](https://ccrma.stanford.edu/~jacobliu/368Report/)
+        * [Michael Jackson Black or White video](http://www.youtube.com/watch?feature=player_detailpage&v=bBAiZcNWecw#t=330s)
+        * [Processing Example](https://github.com/shiffman/Faces/tree/master/FaceMorph)
 
+## 4:00 PM - Wrap-Up / Project Idea Discussion
 
-
-
-
-
-
-Eigenfaces from @atduskgreg
----------------------------
-* Processing example: https://github.com/atduskgreg/Processing-Eigenfaces
-* Uses library: https://code.google.com/p/p-eigenface/
-* Explanation: http://jeremykun.wordpress.com/2011/07/27/eigenfaces/
-* All from syllabus: http://makematics.com/syllabus/2012-fall/
-
-FaceShift
----------
-* http://www.faceshift.com/
-* https://github.com/kylemcdonald/ofxFaceShift/downloads
-
-FaceMorphing
-------------
-* How it works: https://ccrma.stanford.edu/~jacobliu/368Report/
-* Michael Jackson Black or White video: http://www.youtube.com/watch?feature=player_detailpage&v=bBAiZcNWecw#t=330s
