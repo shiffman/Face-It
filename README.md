@@ -26,9 +26,16 @@ A "syllabus" and repository of Processing examples for ITP fall workshop about f
     * The Human Face Documentary: [Part 1](http://www.youtube.com/watch?v=8HlqbSDqmE4), [Part 2](http://www.youtube.com/watch?v=dEocYZmuxbs), [Part 3](http://www.youtube.com/watch?v=HJpqoAkWgXI), [Part 4](http://www.youtube.com/watch?v=IDAsQQE0Il4)
 
 ## 11:00 AM - OpenCV Face Detection
-* [Processing OpenCV library](https://github.com/atduskgreg/OpenCVPro)
-* [Interview with Adam Harvey re: Face Detection](http://makematics.com/research/viola-jones/)
-* [Haarcascade Visualizer](https://github.com/adamhrv/HaarcascadeVisualizer) -- Note this requires Processing 1.5.1
+* How it works
+    * [Processing OpenCV library](https://github.com/atduskgreg/OpenCVPro)
+    * [Interview with Adam Harvey re: Face Detection](http://makematics.com/research/viola-jones/)
+    * [Haarcascade Visualizer](https://github.com/adamhrv/HaarcascadeVisualizer) -- Note this requires Processing 1.5.1
+* Examples
+    * Detect face in image
+    * Detect face in live video
+        * scale down resolution for performance
+        * save face as JPG
+        * track faces over time
 
 ## 12:00 PM - Lunch
 
