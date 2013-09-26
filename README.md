@@ -30,6 +30,16 @@ A "syllabus" and repository of Processing examples for ITP fall workshop about f
 * [Interview with Adam Harvey re: Face Detection](http://makematics.com/research/viola-jones/)
 * 
 
+## 12:00 PM - Lunch
+
+## 1:00 PM - Face Recognition
+* Rekognition: http://rekognition.com/
+* Sign up for API key: http://rekognition.com/register/
+* Get Processing library: https://www.dropbox.com/s/xr09pdaoul7wqpd/RekognitionProcessing.zip
+* Source: https://github.com/shiffman/RekognitionProcessing
+* Also need HTTPProcessing: https://www.dropbox.com/s/fqzddqqfhzt7580/HTTProcessing.zip
+
+
 FaceOSC
 -------
 * FaceTracker: https://github.com/kylemcdonald/ofxFaceTracker
@@ -40,14 +50,6 @@ FaceOSC
 * Osculator: http://www.osculator.net/
 * Interview with Kyle McDonald about FaceTracker: http://makematics.com/research/facetracker/
 * [Deformable Model Fitting by Regularized Landmark Mean-Shift](http://link.springer.com/article/10.1007%2Fs11263-010-0380-4)
-
-Face Recognition with Rekognition
----------------------------------
-* Rekognition: http://rekognition.com/
-* Sign up for API key: http://rekognition.com/register/
-* Get Processing library: https://www.dropbox.com/s/xr09pdaoul7wqpd/RekognitionProcessing.zip
-* Source: https://github.com/shiffman/RekognitionProcessing
-* Also need HTTPProcessing: https://www.dropbox.com/s/fqzddqqfhzt7580/HTTProcessing.zip
 
 Eigenfaces from @atduskgreg
 ---------------------------
