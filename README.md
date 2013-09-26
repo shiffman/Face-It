@@ -3,6 +3,14 @@ Faces
 
 A repository of Processing examples for ITP fall workshop about face detection, recognition, and miscellaneous tracking methods.
 
+Syllabus
+--------
+
+### 10:00 AM - Overview of Face Detection, Recognition, Tracking
+
+### 10:15 AM - 
+
+
 Reference Projects
 ------------------
 * Face Detection
