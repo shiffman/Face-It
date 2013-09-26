@@ -47,10 +47,11 @@ A "syllabus" and repository of Processing examples for ITP fall workshop about f
 * But let's just use an API!
     * [Rekognition](http://rekognition.com/), [Sign up for API key](http://rekognition.com/register/)
     * [Lambda Labls](http://www.lambdal.com/)
-    * [Rekognition for Processing Library]
-* Get Processing library: https://www.dropbox.com/s/xr09pdaoul7wqpd/RekognitionProcessing.zip
-* Source: https://github.com/shiffman/RekognitionProcessing
-* Also need HTTPProcessing: https://www.dropbox.com/s/fqzddqqfhzt7580/HTTProcessing.zip
+    * [Rekognition for Processing Library](https://github.com/shiffman/RekognitionProcessing/releases/tag/0.1)
+        * requires [HTTProcessing](https://www.dropbox.com/s/fqzddqqfhzt7580/HTTProcessing.zip)
+        * [Detect a Face](https://github.com/shiffman/Faces/tree/master/FaceRekognition/FaceDetectExample)
+        * [Train a Face](https://github.com/shiffman/Faces/tree/master/FaceRekognition/FaceTrainExample)
+        * [Recognize a Face](https://github.com/shiffman/Faces/tree/master/FaceRekognition/FaceRecognizeExample)
 
 
 FaceOSC

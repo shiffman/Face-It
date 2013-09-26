@@ -1,5 +1,9 @@
-// This example requires two libraries, these are temporary download links:
-// https://www.dropbox.com/s/xr09pdaoul7wqpd/RekognitionProcessing.zip
+// Detect a Face
+// Daniel Shiffman
+// https://github.com/shiffman/RekognitionProcessing
+// http://rekognition.com/
+
+// This example also requires HTTProcessing.zip
 // https://www.dropbox.com/s/fqzddqqfhzt7580/HTTProcessing.zip
 
 // Also, you need an API key.
@@ -10,10 +14,10 @@
 import httprocessing.*;
 import rekognition.faces.*;
 
-RekognitionFace facerekog;
+Rekognition rekog;
 
 PImage img;
-Face[] faces;
+RFace[] faces;
 
 void setup() {
   size(800, 600);
@@ -28,11 +32,11 @@ void setup() {
   String api_secret = keys[1];
   
   // Create the face recognizer object
-  facerekog = new RekognitionFace(this, api_key, api_secret);
+  rekog = new Rekognition(this, api_key, api_secret);
   
   // Detect faces in image
   // We will get a list of Face objects
-  faces = facerekog.detectFacesPath(sketchPath("data/"+filename));
+  faces = rekog.detectFacesPath("data/"+filename);
 }
 
 void draw() {
