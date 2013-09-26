@@ -56,16 +56,23 @@ A "syllabus" and repository of Processing examples for ITP fall workshop about f
         * [Processing library in progress](https://github.com/shiffman/LambdaProcessing) -- talk to me if you want to use this.
 
 
-FaceOSC
--------
-* FaceTracker: https://github.com/kylemcdonald/ofxFaceTracker
-* All FaceOSC downloads: https://github.com/kylemcdonald/ofxFaceTracker/downloads
-* FaceOSC + Syphon: https://github.com/downloads/kylemcdonald/ofxFaceTracker/FaceOSC-osx+Syphon.zip
-* Blink detection: https://github.com/downloads/kylemcdonald/ofxFaceTracker/BlinkExample-osx.zip
-* oscp5: http://www.sojamo.de/libraries/oscP5/ (install through Processing library manager)
-* Osculator: http://www.osculator.net/
-* Interview with Kyle McDonald about FaceTracker: http://makematics.com/research/facetracker/
-* [Deformable Model Fitting by Regularized Landmark Mean-Shift](http://link.springer.com/article/10.1007%2Fs11263-010-0380-4)
+## 2:30 PM - Face Tracking
+    * [https://github.com/kylemcdonald/FaceTracker]FaceTracker by [http://jsaragih.org/](Jason Saragih).
+         * [Interview with Kyle McDonald about FaceTracker](http://makematics.com/research/facetracker/)
+         * Original "[Deformable Model Fitting by Regularized Landmark Mean-Shift](http://link.springer.com/article/10.1007%2Fs11263-010-0380-4)" paper.
+         * [ofxFaceTracker](https://github.com/kylemcdonald/ofxFaceTracker) for direct use in OF.
+         * [FaceOSC Downloads](https://github.com/kylemcdonald/ofxFaceTracker/downloads) for use with Processing and other applications
+         * [FaceOSC + Syphon to get image into Processing](https://github.com/downloads/kylemcdonald/ofxFaceTracker/FaceOSC-osx+Syphon.zip)
+         * [Blink detection OSC](https://github.com/downloads/kylemcdonald/ofxFaceTracker/BlinkExample-osx.zip)
+         * OSC
+             * [oscp5](http://www.sojamo.de/libraries/oscP5/) (install through Processing library manager)
+             * [Osculator](http://www.osculator.net/) for help with debugging OSC
+
+
+
+
+
+
 
 Eigenfaces from @atduskgreg
 ---------------------------
