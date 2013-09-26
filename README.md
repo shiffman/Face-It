@@ -55,9 +55,8 @@ A "syllabus" and repository of Processing examples for ITP fall workshop about f
     * [Lambda Labs](http://www.lambdal.com/)
         * [Processing library in progress](https://github.com/shiffman/LambdaProcessing) -- talk to me if you want to use this.
 
-
 ## 2:30 PM - Face Tracking
-    * [https://github.com/kylemcdonald/FaceTracker]FaceTracker by [http://jsaragih.org/](Jason Saragih).
+    * [FaceTracker](https://github.com/kylemcdonald/FaceTracker) by [Jason Saragih](http://jsaragih.org/).
          * [Interview with Kyle McDonald about FaceTracker](http://makematics.com/research/facetracker/)
          * Original "[Deformable Model Fitting by Regularized Landmark Mean-Shift](http://link.springer.com/article/10.1007%2Fs11263-010-0380-4)" paper.
          * [ofxFaceTracker](https://github.com/kylemcdonald/ofxFaceTracker) for direct use in OF.
