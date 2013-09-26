@@ -10,11 +10,11 @@ Reference Projects
     * [Portrait – Discovering centric figure(s) of movies using facial recognition](http://www.creativeapplications.net/processing/portrait-discovering-centric-figures-of-movies-using-facial-recognition/)
     * [CVDazzle](http://cvdazzle.com/)
 * Face Recognition 
-    * All the Universe is Full of the Lives of Perfect Creatures: https://vimeo.com/35262930
 * Face Tracking
     * [Dance with your face](http://www.youtube.com/watch?v=dplBh_rxoUc)
     * [Face Substitution](https://vimeo.com/29279198) [Source](https://github.com/arturoc/FaceSubstitution)
     * [Kamio IOS app](https://itunes.apple.com/us/app/kamio/id668849062?mt=8)
+    * [All the Universe is Full of the Lives of Perfect Creatures](https://vimeo.com/35262930)
 * Other
     * [Split Faces](http://www.mymodernmet.com/profiles/blogs/split-family-faces) by http://www.ulriccollette.com/
     * [Blind self-portrait](https://vimeo.com/40279845) and [Self-Portrait Machine](http://we-make-money-not-art.com/archives/2009/07/selfportrait-machine.php#.UkQ27WTXhTs)
