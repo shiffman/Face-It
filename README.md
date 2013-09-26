@@ -5,16 +5,20 @@ A repository of Processing examples for ITP fall workshop about face detection, 
 
 Reference Projects
 ------------------
-* [Split Faces](http://www.mymodernmet.com/profiles/blogs/split-family-faces) by http://www.ulriccollette.com/
-* Dance with your face: http://www.youtube.com/watch?v=dplBh_rxoUc
-* [Blind self-portrait](https://vimeo.com/40279845) and [Self-Portrait Machine](http://we-make-money-not-art.com/archives/2009/07/selfportrait-machine.php#.UkQ27WTXhTs)
-* All the Universe is Full of the Lives of Perfect Creatures: https://vimeo.com/35262930
-* Face Substitution: https://vimeo.com/29279198 (https://github.com/arturoc/FaceSubstitution)
-* CVDazzle: http://cvdazzle.com/
-* [Drawing faces as instructed by facial detection](http://plummerfernandez.tumblr.com/post/54596732227/drawing-faces-as-instructed-by-facial-recognition)
-* [Portrait – Discovering centric figure(s) of movies using facial recognition](http://www.creativeapplications.net/processing/portrait-discovering-centric-figures-of-movies-using-facial-recognition/)
-* [Kamio IOS app](https://itunes.apple.com/us/app/kamio/id668849062?mt=8)
-* The Human Face Documentary: [Part 1](http://www.youtube.com/watch?v=8HlqbSDqmE4), [Part 2](http://www.youtube.com/watch?v=dEocYZmuxbs), [Part 3](http://www.youtube.com/watch?v=HJpqoAkWgXI), [Part 4](http://www.youtube.com/watch?v=IDAsQQE0Il4)
+* Face Detection
+    * [Drawing faces as instructed by facial detection](http://plummerfernandez.tumblr.com/post/54596732227/drawing-faces-as-instructed-by-facial-recognition)
+    * [Portrait – Discovering centric figure(s) of movies using facial recognition](http://www.creativeapplications.net/processing/portrait-discovering-centric-figures-of-movies-using-facial-recognition/)
+    * [CVDazzle](http://cvdazzle.com/)
+* Face Recognition 
+    * All the Universe is Full of the Lives of Perfect Creatures: https://vimeo.com/35262930
+* Face Tracking
+    * [Dance with your face](http://www.youtube.com/watch?v=dplBh_rxoUc)
+    * [Face Substitution](https://vimeo.com/29279198) [Source](https://github.com/arturoc/FaceSubstitution)
+    * [Kamio IOS app](https://itunes.apple.com/us/app/kamio/id668849062?mt=8)
+* Other
+    * [Split Faces](http://www.mymodernmet.com/profiles/blogs/split-family-faces) by http://www.ulriccollette.com/
+    * [Blind self-portrait](https://vimeo.com/40279845) and [Self-Portrait Machine](http://we-make-money-not-art.com/archives/2009/07/selfportrait-machine.php#.UkQ27WTXhTs)
+    * The Human Face Documentary: [Part 1](http://www.youtube.com/watch?v=8HlqbSDqmE4), [Part 2](http://www.youtube.com/watch?v=dEocYZmuxbs), [Part 3](http://www.youtube.com/watch?v=HJpqoAkWgXI), [Part 4](http://www.youtube.com/watch?v=IDAsQQE0Il4)
 
 OpenCV Face Detection
 ---------------------
