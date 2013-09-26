@@ -31,11 +31,11 @@ A "syllabus" and repository of Processing examples for ITP fall workshop about f
     * [Interview with Adam Harvey re: Face Detection](http://makematics.com/research/viola-jones/)
     * [Haarcascade Visualizer](https://github.com/adamhrv/HaarcascadeVisualizer) -- Note this requires Processing 1.5.1
 * Examples
-    * Detect face in image
-    * Detect face in live video
-        * scale down resolution for performance
-        * save face as JPG
-        * track faces over time
+    * [Detect face in image](https://github.com/shiffman/Faces/tree/master/OpenCV/SimpleFaceDetect)
+    * [Detect face in live video](https://github.com/shiffman/Faces/tree/master/OpenCV/LiveFaceDetect)
+        * [scale down resolution for performance](https://github.com/shiffman/Faces/tree/master/OpenCV/LiveFaceDetect_scaled)
+        * [save face as JPG](https://github.com/shiffman/Faces/tree/master/OpenCV/LiveFaceDetect_saveimages)
+        * [track faces over time](https://github.com/shiffman/Faces/tree/master/OpenCV/FaceDetectMemory)
 
 ## 12:00 PM - Lunch
 
