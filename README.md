@@ -14,6 +14,7 @@ Reference Projects
 * [Drawing faces as instructed by facial detection](http://plummerfernandez.tumblr.com/post/54596732227/drawing-faces-as-instructed-by-facial-recognition)
 * [Portrait – Discovering centric figure(s) of movies using facial recognition](http://www.creativeapplications.net/processing/portrait-discovering-centric-figures-of-movies-using-facial-recognition/)
 * [Kamio IOS app](https://itunes.apple.com/us/app/kamio/id668849062?mt=8)
+* The Human Face Documentary: [Part 1](http://www.youtube.com/watch?v=8HlqbSDqmE4), [Part 2](http://www.youtube.com/watch?v=dEocYZmuxbs), [Part 3](http://www.youtube.com/watch?v=HJpqoAkWgXI), [Part 4](http://www.youtube.com/watch?v=IDAsQQE0Il4)
 
 OpenCV Face Detection
 ---------------------
