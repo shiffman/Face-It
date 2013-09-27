@@ -99,9 +99,11 @@ PVector va;
 PVector vb;
 
 void mousePressed() {
-
+  
+  
+  // If we clicked on an image
   if (mouseY < a.height) {
-    // Point on image A
+    // Point on image A first
     if (counter == 0) {
       va = new PVector(mouseX, mouseY);
     } 
