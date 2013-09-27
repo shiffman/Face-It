@@ -1,9 +1,20 @@
+// Face It
+// ITP Fall 2013
+// Daniel Shiffman
+// https://github.com/shiffman/Faces
+
 // Face Recognizer App
 // OpenCV + Rekognition API
 
-// [opencv link]
-// [rekognition API link]
-// [github repo for classes link]
+// This example also requires 3 libraries
+// https://github.com/shiffman/RekognitionProcessing
+// https://github.com/atduskgreg/opencv-processing/releases
+// https://www.dropbox.com/s/fqzddqqfhzt7580/HTTProcessing.zip
+
+// Also, you need an API key.
+// Sign up here: http://rekognition.com/register/
+// Make a text file in your data folder called key.txt
+// Put your API key on the first line and your API secret on the second line
 
 // Rekognition Library
 import rekognition.faces.*;
@@ -12,7 +23,7 @@ import rekognition.faces.*;
 import processing.video.*;
 
 // OpenCV Library
-import gab.opencvpro.*;
+import gab.opencv.*;
 
 // Also need HTTP Requests for Rekognition
 import httprocessing.*;
@@ -22,7 +33,7 @@ import java.awt.Rectangle;
 
 
 // OpenCV and Capture
-OpenCVPro opencv;
+OpenCV opencv;
 Capture cam;
 
 // We will need a smaller image for fast real-time detection
@@ -54,8 +65,8 @@ void setup() {
   scl = windowScale * openCVScale;
 
   // OpenCV object
-  opencv = new OpenCVPro(this, vw/openCVScale, vh/openCVScale);
-  opencv.loadCascade(OpenCVPro.CASCADE_FRONTALFACE_ALT); 
+  opencv = new OpenCV(this, vw/openCVScale, vh/openCVScale);
+  opencv.loadCascade(OpenCV.CASCADE_FRONTALFACE); 
 
   // Scaled down image
   smaller = createImage(opencv.width, opencv.height, RGB);
