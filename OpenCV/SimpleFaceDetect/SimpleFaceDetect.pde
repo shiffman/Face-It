@@ -29,6 +29,10 @@ void setup() {
   
   // Which "cascade" are we going to use?
   opencv.loadCascade(OpenCV.CASCADE_FRONTALFACE);  
+  //opencv.loadCascade(OpenCV.CASCADE_EYE);  
+  //opencv.loadCascade(OpenCV.CASCADE_NOSE);  
+
+  
   
   // Detect!
   faces = opencv.detect();

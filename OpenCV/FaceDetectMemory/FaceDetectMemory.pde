@@ -23,7 +23,7 @@ int faceCount = 0;
 int scl = 4;
 
 void setup() {
-  size(640, 480, P2D);
+  size(640, 480);
   opencv = new OpenCV(this, width/scl, height/scl);
   smaller = createImage(opencv.width,opencv.height,RGB);
   cam = new Capture(this, width, height);

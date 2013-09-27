@@ -26,7 +26,7 @@ Rectangle[] faces;
 int scale = 4;
 
 void setup() {
-  size(640, 480, P2D);
+  size(640, 480);
 
   // Start capturing
   cam = new Capture(this, 640, 480);

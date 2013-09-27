@@ -27,7 +27,7 @@ void setup() {
   Rekognition rekog = new Rekognition(this, api_key, api_secret);
 
   // You can set a namespace and userid for this application
-  rekog.setNamespace("demo");
+  rekog.setNamespace("demo2");
   rekog.setUserID("processing");
 
   // Here we tell Rekognition that the face in this image is associated with this name
@@ -40,7 +40,7 @@ void setup() {
 }
 
 void draw() {
-  
+  background(0);
   // Not doing anything in this example
 }
 

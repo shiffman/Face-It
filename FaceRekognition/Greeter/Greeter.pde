@@ -39,7 +39,6 @@ Capture cam;
 // We will need a smaller image for fast real-time detection
 PImage smaller;
 
-
 int openCVScale = 4;  // Scale Capture to OpenCV
 float windowScale;    // Window to Capture
 float scl;            // Overall scale for drawing faces
@@ -80,7 +79,7 @@ void setup() {
   String secret = keys[1];
   rekog = new Rekognition(this, k, secret);
   // You can have different databases of faces for different applications
-  rekog.setNamespace("demo");
+  rekog.setNamespace("demo2");
   rekog.setUserID("processing");
 
   // A generic time-based face detector
