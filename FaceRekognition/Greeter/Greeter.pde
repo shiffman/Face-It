@@ -128,9 +128,16 @@ void keyPressed() {
       detector.enter(typed, true);
       typed = "";
     } 
-    else {
+    else if (key == 8) {
+      if (typed.length() > 0) {
+        typed = typed.substring(0, typed.length()-1);
+      }
+      detector.enter(typed, false);
+    }
+    else if (key > 31 && key < 127) {
       typed = typed + key;
       detector.enter(typed, false);
     }
   }
 }
+

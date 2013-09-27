@@ -11,7 +11,7 @@ class Face {
 
   // Let's not use the rectangle, ints in limiting
   // Rectangle r;
-  float x,y,w,h;
+  float x, y, w, h;
 
   // Am I available?
   boolean available;
@@ -45,7 +45,7 @@ class Face {
   // Threaded requests to API
   RecognizeRequest rreq;
   TrainRequest treq;
-  
+
 
 
   // Constuctor
@@ -147,8 +147,15 @@ class Face {
     text("Guess: "+guess, x*scl+10, y*scl+45);
 
 
-    // Display info based on selection status
-    if (selected) {
+    if (treq != null) {
+      String dots = "";
+      for (int i = 0; i < frameCount/15 % 4; i++) {
+        dots += ".";
+      }
+      text("Training"+dots, x*scl+10, y*scl+h*scl-15);   
+      // Display info based on selection status
+    } 
+    else if (selected) {
       text("Enter actual name: " + name, x*scl+10, y*scl+h*scl-15);
     } 
     else if (rollover) {
@@ -156,8 +163,15 @@ class Face {
     }
 
 
-    // Display matches and guess info
-    if (matches != null) {
+    if (rreq != null) {
+      String dots = "";
+      for (int i = 0; i < frameCount/15 % 4; i++) {
+        dots += ".";
+      }
+      text("Loading"+dots, x*scl+10, y*scl+75);
+      // Display matches and guess info
+    } 
+    else if (matches != null) {
       String display = "";
       for (String key : matches.keys()) {
         float likely = matches.get(key);
@@ -174,11 +188,11 @@ class Face {
   // Oooh, it would be nice to lerp here!
   void update(Rectangle newR) {
     //r = (Rectangle) newR.clone();
-    x = lerp(x,newR.x,0.1);
-    y = lerp(y,newR.y,0.1);
-    w = lerp(w,newR.width,0.1);
-    h = lerp(h,newR.height,0.1);
-    
+    x = lerp(x, newR.x, 0.1);
+    y = lerp(y, newR.y, 0.1);
+    w = lerp(w, newR.width, 0.1);
+    h = lerp(h, newR.height, 0.1);
+
     // If it lives you should get a new timer
     timer = 127;
   }
@@ -217,3 +231,4 @@ class Face {
     name = s;
   }
 }
+
