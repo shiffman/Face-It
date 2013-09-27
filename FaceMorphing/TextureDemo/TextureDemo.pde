@@ -11,8 +11,6 @@ Triangle pitt;
 Triangle jolie;
 Triangle morph;
 
-
-
 // How much to morph, 0 is image A, 1 is image B, everything else in between
 float amt =  0;
 // Morph bar position

@@ -32,6 +32,7 @@ A "syllabus" and repository of Processing examples for ITP fall workshop about f
 ## 11:00 AM - OpenCV Face Detection
 * How it works
     * [Processing OpenCV library](https://github.com/atduskgreg/OpenCVPro)
+    * [Face Detection visualized by Adam Harvey](https://vimeo.com/12774628)
     * [Interview with Adam Harvey re: Face Detection](http://makematics.com/research/viola-jones/)
     * [Haarcascade Visualizer](https://github.com/adamhrv/HaarcascadeVisualizer) -- Note this requires Processing 1.5.1
 * Examples
