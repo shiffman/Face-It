@@ -1,7 +1,13 @@
 /*
  
+ Face It
+ ITP Fall 2013
+ Daniel Shiffman
+ 
+ Based off of the work of Greg Borenstein (https://github.com/atduskgreg)
+ 
  This example uses the extended version of FaceOSC to draw
- all of the face points tracked by FaceOSC and to display the
+ face mesh tracked by FaceOSC and to display the
  original camera image via Syphon
  
  Download the extended version here:
@@ -29,20 +35,6 @@ PGraphics canvas;
 boolean found;
 PVector[] meshPoints;
 Triangle[] triangles;
-
-
-// UNUSED VARIABLES FOR OTHER, LESS SPECIFIC FACE OSC DATA
-/*
-PVector posePosition;
- float eyeLeftHeight;
- float eyeRightHeight;
- float mouthHeight;
- float mouthWidth;
- float nostrilHeight;
- float leftEyebrowHeight;
- float rightEyebrowHeight;
- float poseScale;
- */
 
 void setup() {
   size(640, 480, P3D);
@@ -74,20 +66,6 @@ void draw() {
   }  
 
   if (found) {
-    fill(100);
-
-    /*drawFeature(faceOutline);
-     drawFeature(leftEyebrow);
-     drawFeature(rightEyebrow);
-     drawFeature(nosePart1);   
-     drawFeature(nosePart2);           
-     drawFeature(leftEye);     
-     drawFeature(rightEye);    
-     drawFeature(mouthPart1);  
-     drawFeature(mouthPart2);  
-     drawFeature(mouthPart3); */
-
-
     for (Triangle t : triangles) {
       noFill();
       stroke(255);
@@ -97,17 +75,6 @@ void draw() {
       vertex(t.c.x,t.c.y);
       endShape();
     }
-  }
-}
-
-void drawFeature(int[] featurePointList) {
-  for (int i = 0; i < featurePointList.length; i++) {
-    PVector meshVertex = meshPoints[featurePointList[i]];
-    if (i > 0) {
-      PVector prevMeshVertex = meshPoints[featurePointList[i-1]];
-      line(meshVertex.x, meshVertex.y, prevMeshVertex.x, prevMeshVertex.y);
-    }
-    ellipse(meshVertex.x, meshVertex.y, 3, 3);
   }
 }
 

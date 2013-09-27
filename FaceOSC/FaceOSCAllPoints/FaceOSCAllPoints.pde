@@ -1,84 +1,72 @@
 /*
+
+ Face It
+ ITP Fall 2013
+ Daniel Shiffman
  
-This example uses the extended version of FaceOSC to draw
-all of the face points tracked by FaceOSC and to display the
-original camera image via Syphon
+ Slightly modified rom Greg Borenstein (https://github.com/atduskgreg) 
  
-Download the extended version here:
+ This example uses the extended version of FaceOSC to draw
+ all of the face points tracked by FaceOSC and to display the
+ original camera image via Syphon
  
-https://github.com/downloads/kylemcdonald/ofxFaceTracker/FaceOSC-osx+Syphon.zip
+ Download the extended version here:
  
-Download the Syphon library for Processing here:
+ https://github.com/downloads/kylemcdonald/ofxFaceTracker/FaceOSC-osx+Syphon.zip
  
-http://code.google.com/p/syphon-implementations/downloads/list
+ Download the Syphon library for Processing here:
  
-NOTE WELL: this example will not work with the standard FaceOSC app,
-which does not send the necessary OSC messages with all of the face points
-and does not publish the camera feed over Syphon.
+ http://code.google.com/p/syphon-implementations/downloads/list
  
-*/
+ NOTE WELL: this example will not work with the standard FaceOSC app,
+ which does not send the necessary OSC messages with all of the face points
+ and does not publish the camera feed over Syphon.
  
+ */
+
 import oscP5.*;
 import codeanticode.syphon.*;
- 
+
 OscP5 oscP5;
 SyphonClient client;
- 
+
 PGraphics canvas;
- 
+
 boolean found;
 PVector[] meshPoints;
-PVector[] triangles;
- 
 
-// UNUSED VARIABLES FOR OTHER, LESS SPECIFIC FACE OSC DATA
-/*
-PVector posePosition;
-float eyeLeftHeight;
-float eyeRightHeight;
-float mouthHeight;
-float mouthWidth;
-float nostrilHeight;
-float leftEyebrowHeight;
-float rightEyebrowHeight;
-float poseScale;
-*/
- 
+
 void setup() {
   size(640, 480, P3D);
   frameRate(30);
   initMesh();
-  
-  
- 
+
   oscP5 = new OscP5(this, 8338);
-  
+
   // USE THESE 2 EVENTS TO DRAW THE 
   // FULL FACE MESH:
   oscP5.plug(this, "found", "/found");
   oscP5.plug(this, "loadMesh", "/raw");
-  
+
   // initialize the syphon client with the name of the server
   client = new SyphonClient(this, "FaceOSC");
   // prep the PGraphics object to receive the camera image
   canvas = createGraphics(640, 480, P3D);
- 
 }
- 
+
 void draw() {  
   stroke(255);
   background(0);
-  
+
   image(canvas, 0, 0, width, height);    
-  
+
   if (client.available()) {
     canvas = client.getGraphics(canvas);
   }  
-  
+
   if (found) {
     fill(100);
-    
-    /*drawFeature(faceOutline);
+    drawFeature(faceOutline);
     drawFeature(leftEyebrow);
     drawFeature(rightEyebrow);
     drawFeature(nosePart1);   
@@ -87,19 +75,10 @@ void draw() {
     drawFeature(rightEye);    
     drawFeature(mouthPart1);  
     drawFeature(mouthPart2);  
-    drawFeature(mouthPart3); */
-   
-   
-    beginShape(TRIANGLES);
-    for (PVector point : meshPoints) {
-      vertex(point.x,point.y);
-    }
-    
-    endShape();
-    
+    drawFeature(mouthPart3);
   }
 }
- 
+
 void drawFeature(int[] featurePointList) {
   for (int i = 0; i < featurePointList.length; i++) {
     PVector meshVertex = meshPoints[featurePointList[i]];
@@ -110,9 +89,9 @@ void drawFeature(int[] featurePointList) {
     ellipse(meshVertex.x, meshVertex.y, 3, 3);
   }
 }
- 
+
 public void found(int i) {
- // println("found: " + i); // 1 == found, 0 == not found
+  // println("found: " + i); // 1 == found, 0 == not found
   found = i == 1;
 }
 
@@ -122,3 +101,4 @@ void oscEvent(OscMessage theOscMessage) {
     // println("UNPLUGGED: " + theOscMessage);
   }
 }
+

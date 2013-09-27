@@ -10,6 +10,15 @@ int[] mouthPart1 = { 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 48};
 int[] mouthPart2 = {60, 65};
 int[] mouthPart3 = {60, 61, 62, 63, 64, 65};
  
+
+void initMesh() {
+  // initialize meshPoints array with PVectors
+  meshPoints = new PVector[66];
+  for (int i = 0; i < meshPoints.length; i++) {
+    meshPoints[i] = new PVector();
+  }
+}
+
 // this method was generated programmatically. It's fugly.
 public void loadMesh(float x0, float y0, float x1, float y1, float x2, float y2, float x3, float y3, float x4, float y4, float x5, float y5, float x6, float y6, float x7, float y7, float x8, float y8, float x9, float y9, float x10, float y10, float x11, float y11, float x12, float y12, float x13, float y13, float x14, float y14, float x15, float y15, float x16, float y16, float x17, float y17, float x18, float y18, float x19, float y19, float x20, float y20, float x21, float y21, float x22, float y22, float x23, float y23, float x24, float y24, float x25, float y25, float x26, float y26, float x27, float y27, float x28, float y28, float x29, float y29, float x30, float y30, float x31, float y31, float x32, float y32, float x33, float y33, float x34, float y34, float x35, float y35, float x36, float y36, float x37, float y37, float x38, float y38, float x39, float y39, float x40, float y40, float x41, float y41, float x42, float y42, float x43, float y43, float x44, float y44, float x45, float y45, float x46, float y46, float x47, float y47, float x48, float y48, float x49, float y49, float x50, float y50, float x51, float y51, float x52, float y52, float x53, float y53, float x54, float y54, float x55, float y55, float x56, float y56, float x57, float y57, float x58, float y58, float x59, float y59, float x60, float y60, float x61, float y61, float x62, float y62, float x63, float y63, float x64, float y64, float x65, float y65) {
   //println("loading mesh...");  

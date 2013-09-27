@@ -1,35 +1,3 @@
-// LISTS OF INDICES FOR EACH FACE PART
-int[] faceOutline = { 
-  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
-};
-int[] leftEyebrow = {
-  17, 18, 19, 20, 21
-}; 
-int[] rightEyebrow = {
-  22, 23, 24, 25, 26
-};
-int[] nosePart1 = {
-  27, 28, 29, 30
-};
-int[] nosePart2 = {
-  31, 32, 33, 34, 35
-};
-int[] leftEye = {
-  36, 37, 38, 39, 40, 41, 36
-};
-int[] rightEye = {
-  42, 43, 44, 45, 46, 47, 42
-};
-int[] mouthPart1 = { 
-  48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 48
-};
-int[] mouthPart2 = {
-  60, 65
-};
-int[] mouthPart3 = {
-  60, 61, 62, 63, 64, 65
-};
-
 void initMesh() {
   // initialize meshPoints array with PVectors
   meshPoints = new PVector[66];
@@ -55,8 +23,6 @@ void initMesh() {
     if (s.equals("b")) t.b = p;
     if (s.equals("c")) t.c = p;
   }
-  
-  
 }
 
 // this method was generated programmatically. It's fugly.

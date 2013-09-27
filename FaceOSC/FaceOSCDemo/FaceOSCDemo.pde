@@ -7,6 +7,8 @@ import oscP5.*;
 OscP5 oscP5;
 
 PVector posePosition;
+PVector poseOrientation;
+
 boolean found;
 float eyeLeftHeight;
 float eyeRightHeight;
@@ -40,7 +42,8 @@ void draw() {
   background(255);
   stroke(0);
   if (found) {
-    translate(posePosition.x, posePosition.y);
+    //translate(posePosition.x, posePosition.y);
+    translate(width/2,height/2);
     scale(poseScale);
     noFill();
     // ellipse(0,0, 3,3);
@@ -62,61 +65,65 @@ public void mouthWidthReceived(float w) {
 }
  
 public void mouthHeightReceived(float h) {
-  println("mouth height: " + h);
+  //println("mouth height: " + h);
   mouthHeight = h;
 }
  
 public void eyebrowLeftReceived(float h) {
-  println("eyebrow left: " + h);
+  //println("eyebrow left: " + h);
   leftEyebrowHeight = h;
 }
  
 public void eyebrowRightReceived(float h) {
-  println("eyebrow right: " + h);
+  //println("eyebrow right: " + h);
   rightEyebrowHeight = h;
 }
  
 public void eyeLeftReceived(float h) {
-  println("eye left: " + h);
+  //println("eye left: " + h);
   eyeLeftHeight = h;
 }
  
 public void eyeRightReceived(float h) {
-  println("eye right: " + h);
+  //println("eye right: " + h);
   eyeRightHeight = h;
 }
  
 public void jawReceived(float h) {
-  println("jaw: " + h);
+  //println("jaw: " + h);
 }
  
 public void nostrilsReceived(float h) {
-  println("nostrils: " + h);
+  //println("nostrils: " + h);
   nostrilHeight = h;
 }
  
 public void found(int i) {
-  println("found: " + i); // 1 == found, 0 == not found
+  //println("found: " + i); // 1 == found, 0 == not found
   found = i == 1;
 }
  
 public void posePosition(float x, float y) {
-  println("pose position\tX: " + x + " Y: " + y );
+  //println("pose position\tX: " + x + " Y: " + y );
   posePosition = new PVector(x, y);
 }
  
 public void poseScale(float s) {
-  println("scale: " + s);
+  //println("scale: " + s);
   poseScale = s;
 }
  
 public void poseOrientation(float x, float y, float z) {
-  println("pose orientation\tX: " + x + " Y: " + y + " Z: " + z);
+  //println("pose orientation\tX: " + x + " Y: " + y + " Z: " + z);
+  poseOrientation.x = x;
+  poseOrientation.y = y;
+  poseOrientation.z = z;
+  
 }
  
  
 void oscEvent(OscMessage theOscMessage) {
   if (theOscMessage.isPlugged()==false) {
-    println("UNPLUGGED: " + theOscMessage);
+    //println("UNPLUGGED: " + theOscMessage);
   }
 }
