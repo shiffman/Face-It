@@ -90,7 +90,9 @@ A "syllabus" and repository of Processing examples for ITP fall workshop about f
 * Face Morphing
    * [How it works](https://ccrma.stanford.edu/~jacobliu/368Report/)
    * [Michael Jackson Black or White video](http://www.youtube.com/watch?feature=player_detailpage&v=bBAiZcNWecw#t=330s)
-   * [Processing Example](https://github.com/shiffman/Faces/tree/master/FaceMorph)
+   * Examples
+       * [Triangle Interpolation with Textures](https://github.com/shiffman/Face-It/tree/master/FaceMorphing/TextureDemo)
+       * [Face Morphing](https://github.com/shiffman/Face-It/tree/master/FaceMorphing/FaceMorph)
 
 ## 4:00 PM - Wrap-Up / Project Idea Discussion
 
