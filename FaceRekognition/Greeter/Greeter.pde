@@ -80,8 +80,8 @@ void setup() {
   String secret = keys[1];
   rekog = new Rekognition(this, k, secret);
   // You can have different databases of faces for different applications
-  rekog.setNamespace("faceit2");
-  rekog.setUserID("shiffman");
+  rekog.setNamespace("demo");
+  rekog.setUserID("processing");
 
   // A generic time-based face detector
   detector = new FaceDetector();

@@ -224,6 +224,9 @@ class Face {
   // Set selection
   void selected(boolean b) {
     selected = b;
+    if (selected) {
+      name = ""; 
+    }
   }  
 
   // Set name
