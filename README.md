@@ -94,7 +94,7 @@ A "syllabus" and repository of Processing examples for ITP fall workshop about f
 ## 4:00 PM - Wrap-Up / Project Idea Discussion
 
 ## Homework
-    * TBA
+   * TBA
 
 # Day 2, Friday, October 4th, 3:30-6
 
