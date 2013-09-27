@@ -42,7 +42,6 @@ void draw() {
   if (found) {
     translate(posePosition.x, posePosition.y);
     scale(poseScale);
-    rotate(
     noFill();
     // ellipse(0,0, 3,3);
     ellipse(-20, eyeLeftHeight * -9, 20, 7);
