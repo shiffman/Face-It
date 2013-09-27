@@ -73,7 +73,12 @@ A "syllabus" and repository of Processing examples for ITP fall workshop about f
          * [oscp5](http://www.sojamo.de/libraries/oscP5/) (install through Processing library manager)
          * [Osculator](http://www.osculator.net/) for help with debugging OSC
     * Examples
-      * coming soon
+      * [Simple Tracker Data Demo](https://github.com/shiffman/Faces/tree/master/FaceOSC/FaceOSCDemo)
+      * [All Points](https://github.com/shiffman/Faces/tree/master/FaceOSC/FaceOSCAllPoints)
+      * [Triangle Mesh](https://github.com/shiffman/Faces/tree/master/FaceOSC/FaceOSCTriangleMesh)
+      * [Blink Particles](https://github.com/shiffman/Faces/tree/master/FaceOSC/BlinkParticles) - requies: [BlinkExample](https://github.com/kylemcdonald/ofxFaceTracker/downloads)
+      * [All OF Examples](https://github.com/kylemcdonald/ofxFaceTracker)
+
 * [FaceShift](http://faceshift.com/)
    * [download free trial](http://www.faceshift.com/get-trial/) - 30 days only, noncommercial license avaialble for $150 and there will be a faceshift laptop in ER for checkout with academic license.
    * [ofxFaceShift](https://github.com/kylemcdonald/ofxFaceShift) for direct use in OF
