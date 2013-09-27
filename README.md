@@ -3,6 +3,8 @@ Face It Syllabus
 
 A "syllabus" and repository of Processing examples for ITP fall workshop about face detection, recognition, and miscellaneous tracking methods.
 
+# Day 1, Saturday, September 28, 10-5
+
 ## 10:00 AM - Overview of day
 * Detection vs. Recognition vs. Tracking
 
@@ -90,4 +92,12 @@ A "syllabus" and repository of Processing examples for ITP fall workshop about f
    * [Processing Example](https://github.com/shiffman/Faces/tree/master/FaceMorph)
 
 ## 4:00 PM - Wrap-Up / Project Idea Discussion
+
+## Homework
+    * TBA
+
+# Day 2, Friday, October 4th, 3:30-6
+
+## Project Presentations
+
 
