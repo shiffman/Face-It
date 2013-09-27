@@ -52,6 +52,7 @@ A "syllabus" and repository of Processing examples for ITP fall workshop about f
         * [Train a Face](https://github.com/shiffman/Faces/tree/master/FaceRekognition/FaceTrainExample)
         * [Recognize a Face](https://github.com/shiffman/Faces/tree/master/FaceRekognition/FaceRecognizeExample)
         * [Look at raw JSON](https://github.com/shiffman/Faces/tree/master/FaceRekognition/RawJSONExample)
+        * [Threaded request](https://github.com/shiffman/Faces/tree/master/FaceRekognition/FaceRecognizeExampleThread)
     * [Lambda Labs](http://www.lambdal.com/)
         * [Processing library in progress](https://github.com/shiffman/LambdaProcessing) -- talk to me if you want to use this.
 
