@@ -84,8 +84,7 @@ A "syllabus" and repository of Processing examples for ITP fall workshop about f
    * [ofxFaceShift](https://github.com/kylemcdonald/ofxFaceShift) for direct use in OF
    * [FaceShiftOSC tutorial](https://vimeo.com/46916078) from Kyle (note the tutorial uses an older version of FaceShift but concepts still apply).
    * [FaceShiftOSC download](https://github.com/kylemcdonald/ofxFaceShift/downloads)
-   * Examples
-     * coming soon
+   * [Simple OSC Processing Example](https://github.com/shiffman/Faces/tree/master/FaceShift)
 * Face Morphing
    * [How it works](https://ccrma.stanford.edu/~jacobliu/368Report/)
    * [Michael Jackson Black or White video](http://www.youtube.com/watch?feature=player_detailpage&v=bBAiZcNWecw#t=330s)
