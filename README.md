@@ -41,6 +41,7 @@ A "syllabus" and repository of Processing examples for ITP fall workshop about f
         * [save face as JPG](https://github.com/shiffman/Faces/tree/master/OpenCV/LiveFaceDetect_saveimages)
         * [track faces over time](https://github.com/shiffman/Faces/tree/master/OpenCV/FaceDetectMemory)
         * [save faces as images](https://github.com/shiffman/Faces/tree/master/OpenCV/SaveFaces)
+    * [Face Detection in JavaScript!](http://inspirit.github.io/jsfeat/sample_haar_face.html)
 
 ## 12:00 PM - Lunch
 
