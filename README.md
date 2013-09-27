@@ -79,7 +79,6 @@ A "syllabus" and repository of Processing examples for ITP fall workshop about f
    * [FaceShiftOSC download](https://github.com/kylemcdonald/ofxFaceShift/downloads)
    * Examples
      * coming soon
-
 * Face Morphing
    * [How it works](https://ccrma.stanford.edu/~jacobliu/368Report/)
    * [Michael Jackson Black or White video](http://www.youtube.com/watch?feature=player_detailpage&v=bBAiZcNWecw#t=330s)
