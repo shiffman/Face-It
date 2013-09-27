@@ -70,11 +70,16 @@ A "syllabus" and repository of Processing examples for ITP fall workshop about f
       * OSC
          * [oscp5](http://www.sojamo.de/libraries/oscP5/) (install through Processing library manager)
          * [Osculator](http://www.osculator.net/) for help with debugging OSC
+    * Examples
+      * coming soon
 * [FaceShift](http://faceshift.com/)
    * [download free trial](http://www.faceshift.com/get-trial/) - 30 days only, noncommercial license avaialble for $150 and there will be a faceshift laptop in ER for checkout with academic license.
    * [ofxFaceShift](https://github.com/kylemcdonald/ofxFaceShift) for direct use in OF
    * [FaceShiftOSC tutorial](https://vimeo.com/46916078) from Kyle (note the tutorial uses an older version of FaceShift but concepts still apply).
    * [FaceShiftOSC download](https://github.com/kylemcdonald/ofxFaceShift/downloads)
+   * Examples
+     * coming soon
+
 * Face Morphing
    * [How it works](https://ccrma.stanford.edu/~jacobliu/368Report/)
    * [Michael Jackson Black or White video](http://www.youtube.com/watch?feature=player_detailpage&v=bBAiZcNWecw#t=330s)
