@@ -11,11 +11,12 @@
  original camera image via Syphon
  
  Download the extended version here:
- 
  https://github.com/downloads/kylemcdonald/ofxFaceTracker/FaceOSC-osx+Syphon.zip
  
- Download the Syphon library for Processing here:
+ Also requires FaceOSC-img
+ https://www.dropbox.com/s/sh6s75w6cdz8np7/FaceOSC-img.zip
  
+ Download the Syphon library for Processing here:
  http://code.google.com/p/syphon-implementations/downloads/list
  
  NOTE WELL: this example will not work with the standard FaceOSC app,
