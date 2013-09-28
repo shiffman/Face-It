@@ -11,7 +11,7 @@ import netP5.*;
 OscP5 oscP5;
 
 // Here are three "gestures" I want to track
-float puff = 0;
+float jaw = 0;
 float smileL = 0;
 float smileR = 0;
 
@@ -29,7 +29,7 @@ void setup() {
   oscP5 = new OscP5(this, properties);
   
   // Plug methods in
-  oscP5.plug(this, "puff", "/gesture/jaw/open");
+  oscP5.plug(this, "jawOpen", "/gesture/jaw/open");
   oscP5.plug(this, "smileL", "/gesture/mouth/smile/left");
   oscP5.plug(this, "smileR", "/gesture/mouth/smile/right");
 }
@@ -56,8 +56,8 @@ void draw() {
 }
 
 // Event methods that will receive data
-void puff(float f) {
-  puff = f;
+void jawOpen(float f) {
+  jaw = f;
 }
 void smileL(float f) {
   smileL = f;
