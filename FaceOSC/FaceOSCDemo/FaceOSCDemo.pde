@@ -28,6 +28,10 @@ float poseScale;
 void setup() {
   size(640, 480);
   frameRate(30);
+  
+  posePosition = new PVector();
+  poseOrientation = new PVector();
+  
   oscP5 = new OscP5(this, 8338);
   oscP5.plug(this, "mouthWidthReceived", "/gesture/mouth/width");
   oscP5.plug(this, "mouthHeightReceived", "/gesture/mouth/height");
@@ -65,7 +69,7 @@ void draw() {
 }
 
 public void mouthWidthReceived(float w) {
-  println("mouth Width: " + w);
+  //println("mouth Width: " + w);
   mouthWidth = w;
 }
 
@@ -110,7 +114,8 @@ public void found(int i) {
 
 public void posePosition(float x, float y) {
   //println("pose position\tX: " + x + " Y: " + y );
-  posePosition = new PVector(x, y);
+  posePosition.x = x;
+  posePosition.y = y;
 }
 
 public void poseScale(float s) {

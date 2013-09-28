@@ -55,6 +55,7 @@ void setup() {
 }
 
 void draw() {  
+  background(0);
   stroke(255);
   background(0);
 
@@ -98,7 +99,7 @@ public void found(int i) {
 void oscEvent(OscMessage theOscMessage) {
   if (theOscMessage.isPlugged()==false) {
     // For any unplugged messages
-    // println("UNPLUGGED: " + theOscMessage);
+    println("UNPLUGGED: " + theOscMessage);
   }
 }
 

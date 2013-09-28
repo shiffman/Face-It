@@ -25,10 +25,14 @@
  */
 
 import oscP5.*;
+import netP5.*;
+
 import codeanticode.syphon.*;
 
 OscP5 oscP5;
 SyphonClient client;
+
+NetAddress remote;
 
 PGraphics canvas;
 
@@ -36,18 +40,25 @@ boolean found;
 
 
 PImage img;
+String path;
 
 void setup() {
   size(1280, 480, P3D);
   frameRate(30);
 
   oscP5 = new OscP5(this, 8338);
-  img = loadImage("face.jpg");
+  remote = new NetAddress("localhost", 9005);
+
+  path = dataPath("obama.jpg");
+  img = loadImage(path);
+  requestTracker(path);
 
   // USE THESE 2 EVENTS TO DRAW THE 
   // FULL FACE MESH:
   oscP5.plug(this, "found", "/found");
   oscP5.plug(this, "loadMesh", "/raw");
+  oscP5.plug(this, "loadMeshImg", "/raw_img");
+
 
   initMesh();
   initMesh2();
@@ -56,6 +67,18 @@ void setup() {
   client = new SyphonClient(this, "FaceOSC");
   // prep the PGraphics object to receive the camera image
   canvas = createGraphics(640, 480, P3D);
+}
+
+void mousePressed() {
+  path = dataPath("pitt.jpg");
+  img = loadImage(path);
+  requestTracker(path);
+}
+
+void requestTracker(String s) {
+  OscMessage msg = new OscMessage("/filepath");
+  msg.add(s);
+  oscP5.send(msg, remote);
 }
 
 void draw() {  
@@ -73,15 +96,15 @@ void draw() {
       noFill();
       stroke(255);
       beginShape(TRIANGLES);
-      vertex(t.a.x,t.a.y);
-      vertex(t.b.x,t.b.y);
-      vertex(t.c.x,t.c.y);
+      vertex(t.a.x, t.a.y);
+      vertex(t.b.x, t.b.y);
+      vertex(t.c.x, t.c.y);
       endShape();
     }
   }
 
   translate(640, 0);
-  image(img, 0, 0,128,96);
+  image(img, 0, 0, 128, 96);
 
 
   for (int i = 0; i < triangles.length; i++) {
