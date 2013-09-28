@@ -14,7 +14,8 @@ class Face {
   boolean delete;
   
   // How long should I live if I have disappeared?
-  int timer = 127;
+  int totalTime = 127;
+  int timer = totalTime;
   
   // Assign a number to each face
   int id;
@@ -30,10 +31,10 @@ class Face {
 
   // Show me
   void display() {
-    fill(0,0,255,timer);
+    fill(0,0,255,map(timer,0,totalTime,0,255);
     stroke(0,0,255);
     rect(r.x*scl,r.y*scl,r.width*scl, r.height*scl);
-    fill(255,timer*2);
+    fill(255);
     text(""+id,r.x*scl+10,r.y*scl+30);
   }
 
@@ -41,6 +42,7 @@ class Face {
   // Oooh, it would be nice to lerp here!
   void update(Rectangle newR) {
     r = (Rectangle) newR.clone();
+    timer = totalTime;
   }
 
   // Count me down, I am gone
