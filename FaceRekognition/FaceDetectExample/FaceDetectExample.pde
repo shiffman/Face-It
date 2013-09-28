@@ -36,7 +36,7 @@ void setup() {
   
   // Detect faces in image
   // We will get a list of Face objects
-  faces = rekog.detectFacesPath("data/"+filename);
+  faces = rekog.detect(filename);
 }
 
 void draw() {
