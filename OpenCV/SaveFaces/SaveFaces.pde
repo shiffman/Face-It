@@ -11,9 +11,6 @@ import processing.video.*;
 // OpenCV Library
 import gab.opencv.*;
 
-// Also need HTTP Requests for Rekognition
-import httprocessing.*;
-
 // Java Rectangle class
 import java.awt.Rectangle;
 
