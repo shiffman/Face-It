@@ -41,7 +41,7 @@ void draw() {
   // Draw a circle based on puffing
   stroke(255);
   fill(255, 50);
-  float d = map(puff, 0, 1, 0, 200);
+  float d = map(jaw, 0, 1, 0, 200);
   ellipse(width/2, height/2, d, d);
  
   // Draw some circles based on smiling
@@ -52,7 +52,7 @@ void draw() {
   fill(255);
   text(nf(smileL, 1, 2), 100, 240);
   text(nf(smileR, 1, 2), 300, 240);
-  text(nf(puff, 1, 2), 200, 240);
+  text(nf(jaw, 1, 2), 200, 240);
 }
 
 // Event methods that will receive data
