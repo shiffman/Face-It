@@ -100,7 +100,7 @@ A "syllabus" and repository of Processing examples for ITP fall workshop about f
 ## 4:00 PM - Wrap-Up / Project Idea Discussion
 
 ## Homework
-   * TBA
+   * [Post a link to your work here](https://github.com/shiffman/Face-It/wiki/Face-It-Projects)
 
 # Day 2, Friday, October 4th, 3:30-6
 
