@@ -80,7 +80,7 @@ A "syllabus" and repository of Processing examples for ITP fall workshop about f
       * [Simple Tracker Data Demo](https://github.com/shiffman/Faces/tree/master/FaceOSC/FaceOSCDemo)
       * [All Points](https://github.com/shiffman/Faces/tree/master/FaceOSC/FaceOSCAllPoints)
       * [Triangle Mesh](https://github.com/shiffman/Faces/tree/master/FaceOSC/FaceOSCTriangleMesh)
-      * [Puppet Face](https://github.com/shiffman/Face-It/tree/master/FaceOSC/FaceOSCPuppet), Requires: [FaceOSC-Img](https://www.dropbox.com/s/sh6s75w6cdz8np7/FaceOSC-img.zip)
+      * [Puppet Face](https://github.com/shiffman/Face-It/tree/master/FaceOSC/FaceOSCPuppet), Requires: [FaceOSC-Img](https://www.dropbox.com/s/fzjznyiksvd6z0v/FaceOSC-img.zip)
       * [Blink Particles](https://github.com/shiffman/Faces/tree/master/FaceOSC/BlinkParticles) - requies: [BlinkExample](https://github.com/kylemcdonald/ofxFaceTracker/downloads)
       * [More Processing Examples](https://github.com/kylemcdonald/FaceOSC-Templates/tree/master/processing)
       * [All OF Examples](https://github.com/kylemcdonald/ofxFaceTracker)
